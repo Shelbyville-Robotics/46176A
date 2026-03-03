@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Robot | Tech Specs</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="loader-wrapper">
+        <div class="loader">
+            <div class="hex-orbit"></div>
+            <div class="hex-center"></div>
+        </div>
+        <p>SCANNING HARDWARE...</p>
+    </div>
+
+    <main id="content" class="hidden">
+        <nav>
+            <div class="logo">ROBO-TEAM</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="robot.html" class="active">The Robot</a></li>
+                <li><a href="index.html#team">Team</a></li>
+            </ul>
+        </nav>
+
+        <section class="robot-hero">
+            <div class="hero-text">
+                <h1>Model: <span>V-4 "Titan"</span></h1>
+                <p>Engineered for speed. Optimized for precision.</p>
+            </div>
+            <div class="robot-blueprint">
+                <img src="https://via.placeholder.com/600x400" alt="Robot Blueprint">
+            </div>
+        </section>
+
+        <section class="specs-section">
+            <h2>Technical Specifications</h2>
+            <div class="specs-container">
+                <table class="specs-table">
+                    <tr>
+                        <td>Drivetrain</td>
+                        <td>4-Wheel Mecanum (Omni-directional)</td>
+                    </tr>
+                    <tr>
+                        <td>Motors</td>
+                        <td>6x Neo Brushless Motors</td>
+                    </tr>
+                    <tr>
+                        <td>Sensors</td>
+                        <td>LIDAR, Gyroscope, Vision Camera</td>
+                    </tr>
+                    <tr>
+                        <td>Weight</td>
+                        <td>120 lbs (Max Comp Weight)</td>
+                    </tr>
+                    <tr>
+                        <td>Control System</td>
+                        <td>RoboRIO 2.0 / Java Based</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+
+        <section class="systems-grid">
+            <div class="system-card">
+                <h3>The Intake</h3>
+                <p>High-torque rollers designed to grab game pieces at any angle with sub-second retrieval times.</p>
+            </div>
+            <div class="system-card">
+                <h3>The Lift</h3>
+                <p>3-stage telescopic arm with a 72-inch reach, powered by dual planetary gearboxes.</p>
+            </div>
+            <div class="system-card">
+                <h3>The Brain</h3>
+                <p>Custom Vision processing allows the robot to track targets and align automatically.</p>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

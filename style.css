@@ -216,3 +216,85 @@ span { color: var(--primary-color); }
 html {
     scroll-behavior: smooth;
 }
+/* --- ROBOT PAGE SPECIFIC --- */
+
+.robot-hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 100px 10%;
+    gap: 40px;
+}
+
+.robot-blueprint img {
+    max-width: 100%;
+    border: 1px solid var(--primary-color);
+    box-shadow: 0 0 20px rgba(0, 242, 255, 0.2);
+    border-radius: 8px;
+}
+
+/* Specs Table */
+.specs-section {
+    padding: 50px 10%;
+}
+
+.specs-container {
+    background: rgba(255, 255, 255, 0.03);
+    padding: 30px;
+    border-left: 4px solid var(--primary-color);
+}
+
+.specs-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.specs-table td {
+    padding: 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.specs-table td:first-child {
+    font-weight: bold;
+    color: var(--primary-color);
+    width: 30%;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+}
+
+/* Systems Cards */
+.systems-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 50px 10% 100px 10%;
+}
+
+.system-card {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 25px;
+    background: #111;
+    transition: 0.3s;
+}
+
+.system-card:hover {
+    background: #161616;
+    border-color: var(--primary-color);
+}
+
+.system-card h3 {
+    color: var(--primary-color);
+    margin-top: 0;
+}
+
+/* Active Nav Link */
+.active {
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 5px;
+}
+
+/* Responsive Fix */
+@media (max-width: 768px) {
+    .robot-hero { flex-direction: column; text-align: center; }
+}
