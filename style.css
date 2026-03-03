@@ -1,0 +1,124 @@
+:root {
+    --primary-color: #00f2ff; /* Cyber blue */
+    --bg-dark: #0d0d0d;
+    --text-light: #e0e0e0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Roboto, sans-serif;
+    background-color: var(--bg-dark);
+    color: var(--text-light);
+    overflow: hidden; /* Prevents scrolling while loading */
+}
+
+/* --- LOADER STYLES --- */
+#loader-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    transition: opacity 0.8s ease;
+}
+
+.loader {
+    position: relative;
+    width: 100px;
+    height: 100px;
+}
+
+/* The rotating "orbit" */
+.hex-orbit {
+    width: 100%;
+    height: 100%;
+    border: 3px solid transparent;
+    border-top: 3px solid var(--primary-color);
+    border-radius: 50%;
+    animation: rotate 1.5s linear infinite;
+}
+
+/* The pulsing center piece */
+.hex-center {
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    width: 50%;
+    height: 50%;
+    background: var(--primary-color);
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    animation: pulse 1s ease-in-out infinite alternate;
+}
+
+#loader-wrapper p {
+    margin-top: 20px;
+    letter-spacing: 5px;
+    font-size: 0.8rem;
+    color: var(--primary-color);
+    text-shadow: 0 0 10px var(--primary-color);
+}
+
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+@keyframes pulse {
+    from { transform: scale(0.8); opacity: 0.5; }
+    to { transform: scale(1.2); opacity: 1; }
+}
+
+/* --- CONTENT STYLES --- */
+.hidden {
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+#content {
+    transition: all 1s ease;
+    padding: 2rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul { display: flex; list-style: none; gap: 2rem; }
+a { color: white; text-decoration: none; font-weight: bold; }
+span { color: var(--primary-color); }
+
+.hero {
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero h1 { font-size: 3.5rem; }
+
+.cta-btn {
+    padding: 1rem 2rem;
+    background: transparent;
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.cta-btn:hover {
+    background: var(--primary-color);
+    color: black;
+    box-shadow: 0 0 20px var(--primary-color);
+}
