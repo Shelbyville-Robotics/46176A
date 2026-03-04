@@ -298,3 +298,108 @@ html {
 @media (max-width: 768px) {
     .robot-hero { flex-direction: column; text-align: center; }
 }
+/* --- DOCS PAGE --- */
+.docs-hero {
+    text-align: center;
+    padding: 80px 10% 40px;
+}
+
+.docs-container {
+    padding: 0 10% 100px;
+}
+
+.docs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.doc-card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(0, 242, 255, 0.1);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    transition: 0.3s;
+    border-radius: 4px;
+}
+
+.doc-card:hover {
+    background: rgba(0, 242, 255, 0.05);
+    border-color: var(--primary-color);
+    transform: scale(1.02);
+}
+
+.doc-icon {
+    font-size: 2rem;
+}
+
+.doc-info h3 {
+    margin: 0;
+    font-size: 1rem;
+    color: #fff;
+    word-break: break-all;
+}
+
+.file-type {
+    font-size: 0.7rem;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.download-link {
+    margin-left: auto;
+    font-size: 0.8rem;
+    color: var(--primary-color);
+    text-decoration: none;
+    border: 1px solid var(--primary-color);
+    padding: 5px 10px;
+    transition: 0.3s;
+}
+
+.download-link:hover {
+    background: var(--primary-color);
+    color: #000;
+}
+/* --- SEARCH BAR STYLES --- */
+.search-container {
+    position: relative;
+    max-width: 600px;
+    margin: 30px auto 0;
+}
+
+#doc-search {
+    width: 100%;
+    padding: 15px 20px 15px 45px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(0, 242, 255, 0.2);
+    border-radius: 4px;
+    color: white;
+    font-size: 1rem;
+    outline: none;
+    transition: 0.3s;
+}
+
+#doc-search:focus {
+    border-color: var(--primary-color);
+    background: rgba(0, 242, 255, 0.05);
+    box-shadow: 0 0 15px rgba(0, 242, 255, 0.2);
+}
+
+.search-icon {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--primary-color);
+    opacity: 0.7;
+}
+
+.no-results {
+    grid-column: 1 / -1;
+    text-align: center;
+    color: #888;
+    padding: 40px;
+    border: 1px dashed #333;
+}

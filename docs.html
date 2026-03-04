@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Archives | Documentation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="loader-wrapper">
+        <div class="loader">
+            <div class="hex-orbit"></div>
+            <div class="hex-center"></div>
+        </div>
+        <p>RETRIVING ARCHIVES...</p>
+    </div>
+
+    <main id="content" class="hidden">
+        <nav>
+            <div class="logo">ROBO-TEAM</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="robot.html">The Robot</a></li>
+                <li><a href="comp.html">Competitions</a></li>
+                <li><a href="docs.html" class="active">Docs</a></li>
+                <li><a href="index.html#team">Team</a></li>
+            </ul>
+        </nav>
+
+        <section class="docs-hero">
+            <h1>Technical <span>Archives</span></h1>
+            <p>A repository of our designs, logs, and legacy data.</p>
+            
+            <div class="search-container">
+                <input type="text" id="doc-search" placeholder="Search by filename or type (e.g. 'chassis' or 'PDF')...">
+                <div class="search-icon">🔍</div>
+            </div>
+        </section>
+
+        <section class="docs-container">
+            <div id="file-list" class="docs-grid">
+                <p id="loading-text">Connecting to database...</p>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        // CONFIGURATION: Update these to match your GitHub project
+        const USERNAME = 'Shelbyville-Robotics'; 
+        const REPO = '46176A';
+        const FOLDER_PATH = 'docs'; 
+
+        let allFiles = []; 
+
+        async function fetchDocs() {
+            const fileListContainer = document.getElementById('file-list');
+            try {
+                // Fetching the contents of the /docs folder via GitHub API
+                const response = await fetch(`https://api.github.com/repos/${USERNAME}/${REPO}/contents/${FOLDER_PATH}`);
+                const data = await response.json();
+
+                if (response.status !== 200) throw new Error("Check folder path or API limits");
+
+                // Filter for files only and sort alphabetically (descending)
+                allFiles = data.filter(item => item.type === 'file');
+                allFiles.sort((a, b) => b.name.localeCompare(a.name));
+
+                displayFiles(allFiles); 
+            } catch (error) {
+                fileListContainer.innerHTML = `<p class="no-results">Error: Could not find the "/docs" folder in your repository.</p>`;
+                console.error(error);
+            }
+        }
+
+        function displayFiles(filesToDisplay) {
+            const fileListContainer = document.getElementById('file-list');
+            fileListContainer.innerHTML = ''; 
+
+            if (filesToDisplay.length === 0) {
+                fileListContainer.innerHTML = `<p class="no-results">No matching documents found.</p>`;
+                return;
+            }
+
+            filesToDisplay.forEach(file => {
+                const ext = file.name.split('.').pop().toUpperCase();
+                const cleanName = file.name.replace(/_/g, ' ').replace(/\.[^/.]+$/, "");
+                
+                const card = document.createElement('div');
+                card.className = 'doc-card';
+                card.innerHTML = `
+                    <div class="doc-icon">📄</div>
+                    <div class="doc-info">
+                        <h3>${cleanName}</h3>
+                        <span class="file-type">${ext} File</span>
+                    </div>
+                    <a href="${file.download_url}" target="_blank" class="download-link">Open</a>
+                `;
+                fileListContainer.appendChild(card);
+            });
+        }
+
+        // Search Input Listener
+        const searchInput = document.getElementById('doc-search');
+        searchInput.addEventListener('input', (e) => {
+            const searchTerm = e.target.value.toLowerCase();
+            const filteredFiles = allFiles.filter(file => file.name.toLowerCase().includes(searchTerm));
+            displayFiles(filteredFiles);
+        });
+
+        // Initialize fetch
+        fetchDocs();
+    </script>
+
+    <script src="script.js"></script>
+</body>
+</html>
