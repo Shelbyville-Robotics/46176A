@@ -16,3 +16,50 @@ window.addEventListener('load', () => {
         }, 800);
     }, 2000); 
 });
+function displayFiles(filesToDisplay) {
+    const fileListContainer = document.getElementById('file-list');
+    fileListContainer.innerHTML = ''; 
+
+    if (filesToDisplay.length === 0) {
+        fileListContainer.innerHTML = `<p class="no-results">No matching documents found.</p>`;
+        return;
+    }
+
+    filesToDisplay.forEach(file => {
+        // Split filename by underscores: [Date, Category, Name]
+        const parts = file.name.split('_');
+        
+        let date = "Unknown Date";
+        let category = "General";
+        let displayName = file.name;
+
+        // If they followed the SOP: YYYY-MM-DD_Category_Name.ext
+        if (parts.length >= 3) {
+            date = parts[0];
+            category = parts[1];
+            // Get the name and remove the extension
+            displayName = parts.slice(2).join(' ').replace(/\.[^/.]+$/, "");
+        } else {
+            // Fallback for files that don't follow the rules
+            displayName = file.name.replace(/_/g, ' ').replace(/\.[^/.]+$/, "");
+        }
+
+        const ext = file.name.split('.').pop().toUpperCase();
+        
+        const card = document.createElement('div');
+        card.className = 'doc-card';
+        card.innerHTML = `
+            <div class="doc-icon">📄</div>
+            <div class="doc-info">
+                <span class="doc-category">${category}</span>
+                <h3>${displayName}</h3>
+                <div class="doc-meta">
+                    <span class="file-type">${ext}</span>
+                    <span class="last-updated">Updated: ${date}</span>
+                </div>
+            </div>
+            <a href="${file.download_url}" target="_blank" class="download-link">Open</a>
+        `;
+        fileListContainer.appendChild(card);
+    });
+}

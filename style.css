@@ -403,3 +403,108 @@ html {
     padding: 40px;
     border: 1px dashed #333;
 }
+/* --- FOOTER & SPONSORS --- */
+footer {
+    background-color: #050505;
+    border-top: 1px solid rgba(0, 242, 255, 0.2);
+    padding: 60px 10% 20px 10%;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.sponsors h3 {
+    color: var(--text-light);
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.sponsor-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.logo-box {
+    width: 150px;
+    height: 80px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px dashed rgba(255, 255, 255, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #888;
+    font-size: 0.9rem;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+
+.logo-box:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-links a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: 0.3s;
+}
+
+.social-links a:hover {
+    color: #fff;
+    text-shadow: 0 0 10px var(--primary-color);
+}
+
+.footer-bottom p {
+    color: #555;
+    font-size: 0.8rem;
+    margin: 0;
+}
+.doc-info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.doc-category {
+    font-size: 0.65rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--primary-color);
+    background: rgba(0, 242, 255, 0.1);
+    padding: 2px 8px;
+    border-radius: 2px;
+    width: fit-content;
+    margin-bottom: 4px;
+}
+
+.doc-meta {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.last-updated {
+    font-size: 0.75rem;
+    color: #666;
+}
