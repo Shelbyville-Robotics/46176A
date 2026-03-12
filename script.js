@@ -68,7 +68,7 @@ async function fetchGallery() {
     if (!galleryContainer) return;
 
     try {
-        const response = await fetch(`https://api.github.com/repos/${USERNAME}/${REPO}/contents/gallery`);
+        const response = await fetch(`https://api.github.com/repos/${USERNAME}/${repo}/contents/gallery`);
         const data = await response.json();
 
         galleryContainer.innerHTML = ''; // Clear loading text
