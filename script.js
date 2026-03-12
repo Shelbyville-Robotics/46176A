@@ -63,3 +63,36 @@ function displayFiles(filesToDisplay) {
         fileListContainer.appendChild(card);
     });
 }
+async function fetchGallery() {
+    const galleryContainer = document.getElementById('robot-gallery');
+    if (!galleryContainer) return;
+
+    try {
+        const response = await fetch(`https://api.github.com/repos/${USERNAME}/${REPO}/contents/gallery`);
+        const data = await response.json();
+
+        galleryContainer.innerHTML = ''; // Clear loading text
+
+        data.forEach(file => {
+            if (file.type === 'file' && isImage(file.name)) {
+                const item = document.createElement('div');
+                item.className = 'gallery-item';
+                item.innerHTML = `
+                    <img src="${file.download_url}" alt="Robot Photo">
+                    <div class="gallery-overlay"></div>
+                `;
+                galleryContainer.appendChild(item);
+            }
+        });
+    } catch (error) {
+        console.error("Gallery Error:", error);
+    }
+}
+
+// Helper to check if file is an image
+function isImage(filename) {
+    return /\.(jpg|jpeg|png|webp|gif)$/i.test(filename);
+}
+
+// Run it
+fetchGallery();
