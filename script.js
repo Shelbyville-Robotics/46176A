@@ -66,7 +66,7 @@ function displayFiles(filesToDisplay) {
 async function fetchGallery() {
     const galleryContainer = document.getElementById('robot-gallery');
     if (!galleryContainer) return;
-
+ //does not work, as of 3/12/
     try {
         const response = await fetch(`https://api.github.com/repos/${USERNAME}/${repo}/contents/gallery`);
         const data = await response.json();

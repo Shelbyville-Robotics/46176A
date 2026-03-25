@@ -508,7 +508,7 @@ footer {
     font-size: 0.75rem;
     color: #666;
 }
-/* --- MEDIA GALLERY --- */
+/* --- MEDIA GALLERY --does not work-- --- */
 .gallery-section {
     padding: 80px 10%;
     background: #0d0d0d;
@@ -556,4 +556,84 @@ footer {
 
 .gallery-item:hover .gallery-overlay {
     bottom: 0;
+}
+/* --- SEASON PAGE --- */
+.season-header {
+    text-align: center;
+    padding: 100px 10% 40px;
+}
+
+.season-subtitle {
+    color: #666;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 0.8rem;
+    margin-top: 10px;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 0 10% 60px;
+}
+
+.stat-card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(0, 242, 255, 0.1);
+    padding: 30px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.stat-value {
+    display: block;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--primary-color);
+    text-shadow: 0 0 10px rgba(0, 242, 255, 0.3);
+}
+
+.stat-label {
+    color: #888;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+}
+
+.season-content {
+    display: flex;
+    gap: 50px;
+    padding: 0 10% 100px;
+    align-items: center;
+}
+
+.mission-statement { flex: 1; }
+.mission-statement h2 { margin-bottom: 20px; }
+.mission-statement p { line-height: 1.8; color: #bbb; }
+
+.objective-list {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.obj-item {
+    font-weight: bold;
+    color: var(--primary-color);
+    background: rgba(0, 242, 255, 0.05);
+    padding: 10px 15px;
+    border-radius: 4px;
+    width: fit-content;
+}
+
+.season-visual img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+    border: 1px solid #333;
+}
+
+@media (max-width: 768px) {
+    .season-content { flex-direction: column; }
 }
