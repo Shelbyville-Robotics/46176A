@@ -1,6 +1,13 @@
 :root {
-    --primary-color: #00f2ff; /* Cyber blue */
+    /* --- THE MASTER ACCENT COLOR --- */
+    --primary-color:  #bc13fe; /* <--- CHANGE THIS HEX CODE */
+    
+    /* This creates a transparent version for glows/fades automatically */
+    --primary-glow: rgba(0, 242, 255, 0.2); 
+    
+    /* Backgrounds */
     --bg-dark: #0d0d0d;
+    --bg-card: rgba(255, 255, 255, 0.05);
     --text-light: #e0e0e0;
 }
 
@@ -636,4 +643,117 @@ footer {
 
 @media (max-width: 768px) {
     .season-content { flex-direction: column; }
+}
+/* Remove standard underline from all links */
+/* Update these specific sections in your style.css */
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding-bottom: 5px;
+    transition: 0.3s;
+    border-bottom: 2px solid transparent; 
+}
+
+/* The Active Link - Now uses the variable */
+.active {
+    color: var(--primary-color) !important;
+    border-bottom: 2px solid var(--primary-color) !important;
+    text-shadow: 0 0 10px var(--primary-glow); /* Using the glow variable here */
+}
+
+/* Update these specific sections in your style.css */
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding-bottom: 5px;
+    transition: 0.3s;
+    border-bottom: 2px solid transparent; 
+}
+
+/* The Active Link - Now uses the variable */
+.active {
+    color: var(--primary-color) !important;
+    border-bottom: 2px solid var(--primary-color) !important;
+    text-shadow: 0 0 10px var(--primary-glow); /* Using the glow variable here */
+}
+/* Update these specific sections in your style.css */
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding-bottom: 5px;
+    transition: 0.3s;
+    border-bottom: 2px solid transparent; 
+}
+
+/* The Active Link - Now uses the variable */
+.active {
+    color: var(--primary-color) !important;
+    border-bottom: 2px solid var(--primary-color) !important;
+    text-shadow: 0 0 10px var(--primary-glow); /* Using the glow variable here */
+}
+
+/* The Hover State - Now uses the variable */
+nav ul li a:hover {
+    color: var(--primary-color);
+    /* We use the glow variable for a subtle faded underline on hover */
+    border-bottom: 2px solid var(--primary-glow); 
+}
+
+/* --- POLISHED ANNOUNCEMENT BANNER --- */
+.announcement-banner {
+    background: rgba(0, 0, 0, 0.8); /* Semi-transparent black */
+    backdrop-filter: blur(10px); /* Blurs the content behind it (Modern UI feel) */
+    color: var(--primary-color);
+    text-align: center;
+    padding: 12px 20px;
+    font-size: 0.85rem;
+    font-family: 'Courier New', Courier, monospace; /* Tech/Code vibe */
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border-bottom: 1px solid var(--primary-glow);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    position: sticky;
+    top: 0;
+    z-index: 3000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+/* A subtle "New Signal" pulse animation */
+.announcement-banner::before {
+    content: "";
+    width: 8px;
+    height: 8px;
+    background: var(--primary-color);
+    border-radius: 50%;
+    display: inline-block;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% { box-shadow: 0 0 0 0px var(--primary-glow); }
+    70% { box-shadow: 0 0 0 10px rgba(0, 242, 255, 0); }
+    100% { box-shadow: 0 0 0 0px rgba(0, 242, 255, 0); }
+}
+
+.announcement-banner a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.announcement-banner a:hover {
+    text-shadow: 0 0 10px var(--primary-color);
+    letter-spacing: 3px; /* Subtle expansion on hover */
+}
+
+/* Ensures the nav doesn't hide behind the banner */
+nav {
+    top: auto; /* Reset previous fix */
 }

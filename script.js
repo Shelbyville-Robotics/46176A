@@ -96,3 +96,23 @@ function isImage(filename) {
 
 // Run it
 fetchGallery();
+// --- ANNOUNCEMENT BANNER CONFIG ---
+const SHOW_BANNER = true; 
+const BANNER_TEXT = "Next season starting May";
+const BANNER_LINK = "#"; 
+
+function handleBanner() {
+    if (!SHOW_BANNER) return;
+
+    const banner = document.createElement('div');
+    banner.className = 'announcement-banner';
+    
+    const content = BANNER_LINK !== "" 
+        ? `<a href="${BANNER_LINK}" target="_blank">[ SIGNAL ACQUIRED ] ${BANNER_TEXT}</a>`
+        : `[ SYSTEM NOTICE ] ${BANNER_TEXT}`;
+
+    banner.innerHTML = content;
+    document.body.prepend(banner);
+}
+
+handleBanner();
