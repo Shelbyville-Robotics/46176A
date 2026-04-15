@@ -12,14 +12,94 @@
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Segoe UI', Roboto, sans-serif;
-    background-color: var(--bg-dark);
+    background-color: #000;
+    /* This creates a subtle grid that looks like a game board */
+    background-image: 
+        linear-gradient(rgba(188, 19, 254, 0.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(188, 19, 254, 0.05) 1px, transparent 1px);
+    background-size: 50px 50px; /* Adjust this to make the "maze" bigger or smaller */
     color: var(--text-light);
-    overflow: hidden; /* Prevents scrolling while loading */
+    font-family: 'VT323', monospace;
+    margin: 0;
+    overflow-x: hidden;
 }
 
+/* Add a slight "Glow" to the grid lines near the top of the page */
+body::after {
+    content: "";
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: radial-gradient(circle at top, rgba(188, 19, 254, 0.15), transparent 70%);
+    pointer-events: none;
+    z-index: -1;
+}
+/* --- OVERRIDE SPLASH SCREEN --- */
+#press-start-screen {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100vh;
+    background: #000;
+    z-index: 10000; /* Above everything */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 1s ease, visibility 1s;
+}
+
+#press-start-screen.hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.game-title {
+    font-size: 5rem;
+    color: var(--primary-color);
+    text-shadow: 4px 4px 0px var(--secondary-color);
+    margin-bottom: 50px;
+}
+
+.start-prompt {
+    text-align: center;
+}
+
+.blink {
+    color: var(--accent-pink);
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    animation: arcade-blink 0.8s infinite;
+}
+
+@keyframes arcade-blink {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+#start-btn {
+    background: transparent;
+    border: 3px solid var(--primary-color);
+    color: var(--primary-color);
+    padding: 15px 40px;
+    font-family: 'VT323', monospace;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#start-btn:hover {
+    background: var(--primary-color);
+    color: #000;
+    box-shadow: 0 0 20px var(--primary-color);
+}
+
+.copyright {
+    position: absolute;
+    bottom: 20px;
+    color: #444;
+    font-size: 0.8rem;
+}
 /* --- LOADER STYLES --- */
 #loader-wrapper {
     position: fixed;
@@ -413,10 +493,41 @@ html {
 /* --- FOOTER & SPONSORS --- */
 footer {
     background-color: #050505;
-    border-top: 1px solid rgba(0, 242, 255, 0.2);
+    border-top: 1px solid var(--secondary-color);
     padding: 60px 10% 20px 10%;
     margin-top: 50px;
+    
+    /* Centralizing everything */
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
     text-align: center;
+}
+
+.footer-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers the sponsor grid */
+}
+
+.sponsor-logos {
+    display: flex;
+    justify-content: center; /* Centers logos horizontally */
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.footer-bottom {
+    width: 100%;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers socials and copyright */
+    gap: 15px;
 }
 
 .sponsors h3 {
@@ -427,27 +538,37 @@ footer {
     letter-spacing: 2px;
 }
 
-.sponsor-logos {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 30px;
-    margin-bottom: 50px;
-}
 
 .logo-box {
     width: 150px;
     height: 80px;
     background: rgba(255, 255, 255, 0.05);
-    border: 1px dashed rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.1);
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #888;
-    font-size: 0.9rem;
-    border-radius: 4px;
+    border-radius: 8px;
+    transition: 0.3s ease;
+    padding: 10px;
+    overflow: hidden; /* Keeps images from leaking out */
+}
+
+.logo-box:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: var(--primary-color);
+    transform: translateY(-5px); /* Makes it pop up slightly */
+}
+
+.logo-box img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain; /* This ensures the logo stays proportional */
+    filter: grayscale(100%) brightness(0.8); /* Makes them all match your theme */
     transition: 0.3s;
+}
+
+.logo-box:hover img {
+    filter: grayscale(0%) brightness(1); /* Brings back full color on hover */
 }
 
 .logo-box:hover {
@@ -704,56 +825,94 @@ nav ul li a:hover {
 
 /* --- POLISHED ANNOUNCEMENT BANNER --- */
 .announcement-banner {
-    background: rgba(0, 0, 0, 0.8); /* Semi-transparent black */
-    backdrop-filter: blur(10px); /* Blurs the content behind it (Modern UI feel) */
+    background: #000;
+    border-bottom: 3px solid var(--secondary-color);
     color: var(--primary-color);
-    text-align: center;
-    padding: 12px 20px;
-    font-size: 0.85rem;
-    font-family: 'Courier New', Courier, monospace; /* Tech/Code vibe */
-    font-weight: bold;
-    letter-spacing: 2px;
+    font-family: 'VT323', monospace;
+    font-size: 1.4rem;
+    /* Adding a flicker effect to the text */
+    animation: flicker 1.5s infinite;
+}
+
+@keyframes flicker {
+    0% { opacity: 1; }
+    50% { opacity: 0.8; }
+    100% { opacity: 1; }
+}
+/* --- RETRO ARCADE POLISH --- */
+
+/* 1. Import a Pixel Font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+body {
+    font-family: 'VT323', monospace; /* This font looks like a classic arcade display */
+    font-size: 1.2rem;
+}
+
+/* 2. CRT Scanline Overlay */
+body::before {
+    content: " ";
+    display: block;
+    position: fixed;
+    top: 0; left: 0; bottom: 0; right: 0;
+    background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), 
+                linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+    z-index: 9999; /* Put it above everything */
+    background-size: 100% 4px, 3px 100%;
+    pointer-events: none; /* Let clicks pass through */
+}
+
+/* 3. Retro Glow for Headers */
+h1, h2, .logo {
+    color: var(--primary-color);
+    text-shadow: 3px 3px 0px var(--secondary-color);
     text-transform: uppercase;
-    border-bottom: 1px solid var(--primary-glow);
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
-    position: sticky;
-    top: 0;
-    z-index: 3000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
+}
+/* --- ARCADE LEADERBOARD --- */
+.leaderboard-section {
+    padding: 60px 10%;
+    background: #000;
 }
 
-/* A subtle "New Signal" pulse animation */
-.announcement-banner::before {
-    content: "";
-    width: 8px;
-    height: 8px;
-    background: var(--primary-color);
-    border-radius: 50%;
-    display: inline-block;
-    animation: pulse 2s infinite;
+.arcade-table-container {
+    border: 4px solid var(--secondary-color);
+    padding: 20px;
+    background: rgba(33, 33, 255, 0.05);
+    box-shadow: 0 0 20px var(--secondary-color);
+    overflow-x: auto; /* Good for iPad/Mobile */
 }
 
-@keyframes pulse {
-    0% { box-shadow: 0 0 0 0px var(--primary-glow); }
-    70% { box-shadow: 0 0 0 10px rgba(0, 242, 255, 0); }
-    100% { box-shadow: 0 0 0 0px rgba(0, 242, 255, 0); }
-}
-
-.announcement-banner a {
+.high-score-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: 'VT323', monospace;
+    font-size: 1.5rem;
     color: var(--primary-color);
-    text-decoration: none;
-    transition: 0.3s;
+    text-align: left;
 }
 
-.announcement-banner a:hover {
+.high-score-table th {
+    color: var(--accent-pink);
+    border-bottom: 2px dashed var(--secondary-color);
+    padding: 10px;
+}
+
+.high-score-table td {
+    padding: 15px 10px;
+}
+
+/* Zebra striping for that retro list look */
+.high-score-table tr:nth-child(even) {
+    background: rgba(255, 255, 255, 0.02);
+}
+
+/* Highlight the top player or current user */
+.high-score-table tr.highlight {
+    color: #fff;
     text-shadow: 0 0 10px var(--primary-color);
-    letter-spacing: 3px; /* Subtle expansion on hover */
 }
 
-/* Ensures the nav doesn't hide behind the banner */
-nav {
-    top: auto; /* Reset previous fix */
+.high-score-table tr:hover {
+    background: var(--primary-glow);
+    cursor: pointer;
 }

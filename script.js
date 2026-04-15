@@ -1,3 +1,4 @@
+localStorage.clear();
 window.addEventListener('load', () => {
     const loader = document.getElementById('loader-wrapper');
     const content = document.getElementById('content');
@@ -97,7 +98,7 @@ function isImage(filename) {
 // Run it
 fetchGallery();
 // --- ANNOUNCEMENT BANNER CONFIG ---
-const SHOW_BANNER = true; 
+const SHOW_BANNER = false; 
 const BANNER_TEXT = "Next season starting May";
 const BANNER_LINK = "#"; 
 
@@ -116,3 +117,71 @@ function handleBanner() {
 }
 
 handleBanner();
+document.addEventListener("DOMContentLoaded", () => {
+    const splash = document.getElementById('press-start-screen');
+    const startBtn = document.getElementById('start-btn');
+
+    // Check if the user has already "Started" before
+    if (localStorage.getItem("hasPressedStart")) {
+        splash.style.display = 'none'; // Instant hide if they've seen it
+    }
+
+    startBtn.addEventListener('click', () => {
+        // 1. Play a sound effect (optional)
+        // new Audio('start-sound.mp3').play();
+
+        // 2. Hide the screen with the fade effect
+        splash.classList.add('hidden');
+
+        // 3. Save the "seen" status in the browser's memory
+        localStorage.setItem("hasPressedStart", "true");
+    });
+});
+// --- LEADERBOARD DATA ---
+const teamScores = [
+    { name: "CAPTAIN", drive: 99, code: 85, hours: 120 },
+    { name: "BOT", drive: 75, code: 99, hours: 145 },
+    { name: "STRESSTEST", drive: 60, code: 70, hours: 200 },
+    { name: "ROOKIE", drive: 40, code: 50, hours: 80 }
+];
+
+function updateLeaderboard() {
+    const tableBody = document.getElementById('leaderboard-body');
+    if (!tableBody) return;
+
+    // 1. Calculate Points and Sort (Points = Drive + Code)
+    // You can change this formula however you like!
+    const sortedData = teamScores.map(player => ({
+        ...player,
+        points: player.drive + player.code
+    })).sort((a, b) => b.points - a.points);
+
+    // 2. Clear existing rows
+    tableBody.innerHTML = '';
+
+    // 3. Build new rows
+    sortedData.forEach((player, index) => {
+        const rank = index + 1;
+        let rankText = `${rank}TH`;
+        if (rank === 1) rankText = "1ST";
+        if (rank === 2) rankText = "2ND";
+        if (rank === 3) rankText = "3RD";
+
+        const row = document.createElement('tr');
+        // Add the 'highlight' class to the top player
+        if (rank === 1) row.className = 'highlight';
+
+        row.innerHTML = `
+            <td>${rankText}</td>
+            <td>${player.name}</td>
+            <td>${player.drive}</td>
+            <td>${player.code}</td>
+            <td>${player.points}</td>
+            <td>${player.hours}</td>
+        `;
+        tableBody.appendChild(row);
+    });
+}
+
+// Run the update
+updateLeaderboard();
