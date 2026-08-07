@@ -870,6 +870,8 @@ h1, h2, .logo {
 }
 /* --- ARCADE LEADERBOARD --- */
 .leaderboard-section {
+    margin-left: -2rem;
+    margin-right: -2rem;
     padding: 60px 10%;
     background: #000;
 }
