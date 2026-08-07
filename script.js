@@ -121,6 +121,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const splash = document.getElementById('press-start-screen');
     const startBtn = document.getElementById('start-btn');
 
+    if (!splash || !startBtn) return;
+
     // Check if the user has already "Started" before
     if (localStorage.getItem("hasPressedStart")) {
         splash.style.display = 'none'; // Instant hide if they've seen it
