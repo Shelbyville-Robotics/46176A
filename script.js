@@ -1,4 +1,4 @@
-localStorage.clear();
+//localStorage.clear();//
 window.addEventListener('load', () => {
     const loader = document.getElementById('loader-wrapper');
     const content = document.getElementById('content');
