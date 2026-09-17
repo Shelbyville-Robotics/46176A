@@ -1,14 +1,15 @@
 :root {
-    /* --- THE MASTER ACCENT COLOR --- */
-    --primary-color:  #bc13fe; /* <--- CHANGE THIS HEX CODE */
+    /* --- BACON, EGG & CHEESE THEME --- */
+    --primary-color: #ffd700;   /* Sunny-Side-Up Egg Yolk Yellow */
+    --secondary-color: #ff8c00; /* Melty Cheddar Orange */
+    --accent-pink: #ff4d4d;     /* Crispy Bacon Red */
+
+    /* Automatically calculated glow */
+    --primary-glow: color-mix(in srgb, var(--primary-color), transparent 80%);
     
-    /* This creates a transparent version for glows/fades automatically */
-    --primary-glow: rgba(0, 242, 255, 0.2); 
-    
-    /* Backgrounds */
-    --bg-dark: #0d0d0d;
-    --bg-card: rgba(255, 255, 255, 0.05);
-    --text-light: #e0e0e0;
+    /* Dark Griddle Background */
+    --bg-dark: #0f0e0e; 
+    --text-light: #f5f2eb;      /* Warm Toast Off-White */
 }
 
 body {

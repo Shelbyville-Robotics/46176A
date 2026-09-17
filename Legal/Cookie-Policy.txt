@@ -1,0 +1,326 @@
+# Privacy Policy
+
+**Last Updated:** September 17, 2026
+
+**Entity:** Greeks LLC
+
+Greeks LLC (“Greeks LLC,” “we,” “us,” or “our”) respects your privacy. This Privacy Policy explains how information may be collected, processed, stored, and used when you visit websites operated by Greeks LLC, including websites associated with **Bacon, Egg & Cheese™** and **HappyMeal** (collectively, the “Websites”).
+
+The Websites are primarily intended to provide information about robotics teams, projects, activities, competitions, and related work.
+
+## 1. Information We Collect
+
+The Websites are designed to collect as little personal information as reasonably necessary to operate, secure, maintain, and understand Website traffic.
+
+Information may be collected through several components of our Website infrastructure, including GitHub Pages, Cloudflare, domain and DNS services, and our own backup and monitoring systems.
+
+### 1.1 Information Automatically Generated When You Visit
+
+When you visit a Website, certain technical information may be automatically processed by the services used to host, protect, and operate the Websites.
+
+This information may include:
+
+* IP address;
+* Date and time of the request;
+* Requested webpage or resource;
+* Referring page or website;
+* Browser type;
+* Operating system;
+* Device or connection information;
+* General geographic information that may be derived from an IP address;
+* Technical information concerning the connection; and
+* Security or diagnostic information.
+
+This information may be used for purposes such as website security, preventing abuse, diagnosing technical problems, maintaining availability, and understanding general Website traffic.
+
+GitHub states that visitors to GitHub Pages sites have their IP addresses logged and stored for security purposes, including visitors who are not signed into GitHub.
+
+## 2. GitHub Pages
+
+The Websites may be hosted using **GitHub Pages** through the Greeks LLC organization.
+
+GitHub Pages provides the infrastructure used to publish the Websites.
+
+Because GitHub operates the hosting infrastructure, GitHub may independently process certain technical information associated with visits to the Websites.
+
+GitHub's own privacy practices apply to information that GitHub processes through its services.
+
+For additional information regarding GitHub's handling of information, visitors should review GitHub's applicable privacy documentation.
+
+Greeks LLC does not control all information processed by GitHub as part of providing GitHub Pages.
+
+## 3. Cloudflare
+
+The Websites use **Cloudflare** services to assist with network security, traffic management, connectivity, and related Website functionality.
+
+Cloudflare may process technical information associated with visitors' requests, including information necessary to route, secure, and protect Website traffic.
+
+Cloudflare may also use strictly necessary cookies or similar technologies in providing its services. Cloudflare states that such cookies can be used for functions including traffic management and protection against malicious traffic.
+
+The Websites do not use Cloudflare's infrastructure to intentionally identify individual visitors beyond information reasonably necessary for Website operation, security, and traffic analysis.
+
+Cloudflare's own privacy policies and terms govern information processed by Cloudflare as a service provider.
+
+## 4. Website Traffic Information
+
+Greeks LLC may collect basic Website traffic information to understand how the Websites are being used and to identify technical problems.
+
+This information may include aggregate or technical measurements such as:
+
+* Number of visits;
+* Number of page requests;
+* Frequently accessed pages;
+* Approximate traffic patterns;
+* Date and time of visits;
+* Referring sources;
+* Browser or device categories;
+* Basic performance information; and
+* Other non-content traffic measurements.
+
+Where possible, traffic information is used in an aggregated or summarized form rather than to identify individual visitors.
+
+## 5. Backup Traffic Data
+
+Greeks LLC maintains its own backup and monitoring systems, which may be hosted on privately controlled computing equipment.
+
+These systems may retain limited Website traffic or technical information for purposes including:
+
+* Backup;
+* Redundancy;
+* Security;
+* Troubleshooting;
+* Availability monitoring;
+* Technical diagnostics; and
+* Comparing traffic measurements with third-party infrastructure.
+
+Greeks LLC does not intentionally use these backup systems to create individual visitor profiles.
+
+Where practical, traffic information retained by these systems is limited to the minimum information reasonably necessary for the stated purposes.
+
+## 6. Cookies and Similar Technologies
+
+The Websites may use cookies or similar technologies as part of the infrastructure required to provide, secure, and operate the Websites.
+
+These may include technologies used by Cloudflare or other infrastructure providers.
+
+Cookies may be used for purposes such as:
+
+* Security;
+* Traffic management;
+* Preventing malicious or abusive requests;
+* Maintaining Website functionality;
+* Technical diagnostics; and
+* Measuring Website performance or traffic.
+
+The Websites do not intentionally use cookies for behavioral advertising.
+
+You may be able to control or restrict cookies through your browser settings. Disabling certain cookies may affect Website functionality.
+
+## 7. Information You Voluntarily Provide
+
+If a Website provides a contact form, email link, application, submission form, or similar feature, you may voluntarily provide information such as:
+
+* Name;
+* Email address;
+* Message content;
+* Team or organization information; or
+* Other information included in your submission.
+
+Greeks LLC uses information voluntarily submitted through these features for the purpose for which it was provided, such as responding to a message, processing a request, or communicating with a user.
+
+Greeks LLC does not require visitors to provide personal information merely to view publicly available Website content.
+
+## 8. How We Use Information
+
+Information collected through the Websites may be used to:
+
+* Operate the Websites;
+* Host and deliver Website content;
+* Protect the Websites from malicious traffic;
+* Maintain Website security;
+* Diagnose technical problems;
+* Monitor availability;
+* Understand general traffic patterns;
+* Improve Website performance and design;
+* Respond to communications;
+* Maintain backups;
+* Investigate abuse or unauthorized activity;
+* Comply with applicable legal obligations; and
+* Protect the rights, property, and security of Greeks LLC and others.
+
+We do not intentionally use Website traffic information to create advertising profiles of visitors.
+
+## 9. Information We Do Not Intentionally Collect
+
+Unless specifically stated on a particular Website, Greeks LLC does not intentionally request or collect sensitive personal information merely for the purpose of allowing someone to browse the Websites.
+
+The Websites are not designed to require visitors to provide:
+
+* Social Security numbers;
+* Financial account information;
+* Credit card information;
+* Government identification numbers;
+* Passwords for unrelated services; or
+* Other highly sensitive information.
+
+Visitors should not submit sensitive personal information through general contact forms or other Website features unless specifically requested and appropriate.
+
+## 10. Third-Party Services
+
+The Websites rely on third-party services to provide portions of their infrastructure.
+
+These may include:
+
+* GitHub Pages;
+* Cloudflare;
+* Porkbun;
+* Domain registry and DNS infrastructure;
+* Hosting and infrastructure providers;
+* Security services;
+* Analytics or traffic-monitoring services; and
+* Other services that may be added to the Websites in the future.
+
+Each third-party provider may process information according to its own privacy policy and terms.
+
+Greeks LLC does not control the independent privacy practices of third-party providers.
+
+### Domain Registration
+
+Domain names used by the Websites may be registered through **Porkbun**.
+
+Porkbun may collect and process domain-registration information, account information, usage information, and related technical data according to its own policies. Porkbun also provides WHOIS/privacy-related services for supported domains.
+
+Domain-registration information is therefore governed in part by the policies and requirements applicable to the domain registrar and the relevant domain registry.
+
+## 11. No Sale of Personal Information
+
+Greeks LLC does not sell personal information collected through the Websites as a source of advertising or data-broker revenue.
+
+The use of third-party infrastructure providers does not mean that Greeks LLC sells visitor information to those providers.
+
+Third-party service providers may independently process technical information as necessary to provide their services.
+
+## 12. Sharing of Information
+
+Greeks LLC may share or permit access to information with service providers when reasonably necessary to operate the Websites.
+
+Examples include providers responsible for:
+
+* Website hosting;
+* Traffic routing;
+* DNS;
+* Security;
+* Domain registration;
+* Technical monitoring;
+* Backup infrastructure; and
+* Other Website-related services.
+
+Information may also be disclosed when reasonably necessary to:
+
+* Comply with applicable law;
+* Respond to a valid legal request;
+* Protect the rights or property of Greeks LLC;
+* Protect the safety of users or others;
+* Investigate suspected abuse or unlawful activity; or
+* Enforce applicable agreements and policies.
+
+## 13. Data Retention
+
+Different systems may retain information for different periods.
+
+Third-party providers such as GitHub, Cloudflare, and Porkbun maintain their own retention practices.
+
+Greeks LLC may retain basic technical or traffic information in its own systems for as long as reasonably necessary for backup, security, troubleshooting, operational, or recordkeeping purposes.
+
+When information is no longer reasonably necessary, Greeks LLC may delete, anonymize, or otherwise dispose of it where practical and appropriate.
+
+## 14. Security
+
+Greeks LLC takes reasonable measures to protect information within systems that it controls.
+
+These measures may include:
+
+* Access controls;
+* Account security;
+* System updates;
+* Network security;
+* Backups;
+* Monitoring;
+* Restricted administrative access; and
+* Other reasonable technical or organizational measures.
+
+However, no Internet transmission, website, computer system, or storage system can be guaranteed to be completely secure.
+
+Greeks LLC therefore cannot guarantee absolute security of information.
+
+## 15. Children's and Student Privacy
+
+The Websites may be viewed by students, children, and individuals of various ages because of their connection to robotics and educational activities.
+
+Greeks LLC does not intentionally request sensitive personal information from children through general Website browsing.
+
+Where a Website contains information about students or team members, such information may have been provided or authorized by the applicable team, school, parent or guardian, student, mentor, or other authorized party.
+
+If you believe that personal information concerning a child has been published improperly, please contact Greeks LLC.
+
+Where appropriate and legally required, Greeks LLC will review requests concerning the removal or correction of such information.
+
+## 16. Photographs and Team Information
+
+Robotics Websites may display photographs, names, accomplishments, competition information, project information, and other materials associated with robotics teams and their activities.
+
+Such information may have been provided or authorized by the relevant team, school, organization, student, parent/guardian, photographer, or other rights holder.
+
+Greeks LLC does not claim ownership of personal information or photographs merely because they appear on a Website.
+
+Requests concerning the removal or correction of team-related personal information may be submitted using the contact information below.
+
+## 17. Your Privacy Choices
+
+Depending on applicable law and the circumstances of the information involved, you may have rights concerning personal information that Greeks LLC maintains about you.
+
+These may include requesting:
+
+* Access to certain personal information;
+* Correction of inaccurate information;
+* Deletion of certain information;
+* Information concerning how information is used; or
+* Other rights provided by applicable law.
+
+Requests may be subject to reasonable verification and legal limitations.
+
+To make a privacy-related request, contact Greeks LLC using the information provided below.
+
+## 18. Do Not Track
+
+Some browsers provide “Do Not Track” or similar signals.
+
+There is not a universal technical standard requiring websites to respond to these signals in a particular manner.
+
+Accordingly, the Websites may not respond to every browser-based Do Not Track signal.
+
+Where applicable law requires recognition of a particular privacy signal or preference, Greeks LLC will comply with the applicable requirement.
+
+## 19. Changes to This Privacy Policy
+
+Greeks LLC may update this Privacy Policy as the Websites, infrastructure, or applicable legal requirements change.
+
+When this policy is updated, the “Last Updated” date will be changed.
+
+If a material change is made, additional notice may be provided where appropriate or required by law.
+
+## 20. Contact
+
+Questions, concerns, privacy requests, or requests concerning personal information displayed on the Websites may be directed to:
+
+**Greeks LLC**
+
+**Privacy Contact:** [Insert Privacy Email Address]
+
+**Website:** [Insert Official Website URL]
+
+---
+
+**© 2026 Greeks LLC. All rights reserved.**
+
+This Privacy Policy applies to Websites operated by Greeks LLC, including Websites associated with **Bacon, Egg & Cheese™** and **HappyMeal**, unless a particular Website provides a separate privacy notice.

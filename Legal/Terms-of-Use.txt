@@ -1,0 +1,253 @@
+# Terms of Use
+
+**Last Updated:** September 16, 2026
+
+**Entity:** Greeks LLC
+
+Welcome to the websites and online services operated by Greeks LLC (collectively, the “Websites”). These Terms of Use (“Terms”) govern your access to and use of websites, pages, applications, content, and services operated by or on behalf of Greeks LLC, including websites associated with the **Bacon, Egg & Cheese™** and **HappyMeal** robotics teams.
+
+By accessing or using any of the Websites, you acknowledge that you have read, understood, and agree to be bound by these Terms. If you do not agree with these Terms, you should not use the Websites.
+
+## 1. About These Websites
+
+The Websites are created, developed, maintained, and operated by Greeks LLC for informational, educational, creative, robotics, team, and related purposes.
+
+Individual Websites may represent different robotics teams, projects, organizations, events, or activities. References to Greeks LLC do not necessarily mean that Greeks LLC owns every piece of content associated with a particular team or project. Certain photographs, logos, designs, names, videos, documents, robotics materials, or other content may be owned by or licensed from the respective teams, schools, organizations, students, sponsors, partners, or other third parties.
+
+## 2. Intellectual Property
+
+Unless otherwise stated, the original website design, layout, user interface, graphics created by Greeks LLC, source code, backend code, custom functionality, written website content, database structure, and other original materials developed by Greeks LLC are the property of Greeks LLC or are used under an applicable license.
+
+These materials are protected by applicable copyright, trademark, and other intellectual-property laws.
+
+Nothing in these Terms grants you ownership of any intellectual property belonging to Greeks LLC or any third party.
+
+You may not reproduce, distribute, modify, publicly display, publicly perform, publish, sell, license, transfer, or create derivative works from protected materials belonging to Greeks LLC without prior written permission, except where such use is expressly permitted by applicable law or an applicable license.
+
+## 3. Website Designs and Source Code
+
+The visual design and technical implementation of the Websites may constitute original creative and technical work.
+
+Without prior written permission, you may not:
+
+* Copy or substantially reproduce the visual design of a Website;
+* Copy, reproduce, or redistribute proprietary source code;
+* Recreate the Website's structure or interface for another website or service;
+* Download or systematically copy substantial portions of the Website;
+* Mirror a Website or its content on another server or domain;
+* Remove copyright, trademark, attribution, or other proprietary notices;
+* Use Website materials to create a substantially similar competing website;
+* Represent Greeks LLC's work as your own; or
+* Use automated methods to scrape, harvest, or systematically collect Website content except where expressly permitted.
+
+Nothing in this section prevents ordinary linking to a publicly accessible page of a Website, provided that the link does not falsely suggest sponsorship, endorsement, ownership, or affiliation with Greeks LLC.
+
+## 4. Limited Permission to Use Website Content
+
+Subject to these Terms, Greeks LLC grants you a limited, non-exclusive, non-transferable, revocable permission to access and use the Websites for personal, educational, informational, and non-commercial purposes.
+
+This permission does not transfer ownership of any Website material to you.
+
+You may view, print, or save reasonable portions of publicly available Website content for personal or educational reference, provided that you do not modify the material, remove proprietary notices, redistribute substantial portions of the material, or use the material for commercial purposes without permission.
+
+Separate materials may be subject to additional licenses or restrictions.
+
+## 5. Third-Party Materials
+
+The Websites may contain or display materials that are owned, provided, or licensed by third parties.
+
+Third-party materials may include, but are not limited to:
+
+* Photographs;
+* Team or organization logos;
+* Sponsor logos;
+* Fonts;
+* Icons;
+* Software libraries;
+* Open-source software;
+* Embedded media;
+* Videos;
+* Robotics-related materials;
+* External links;
+* APIs and other third-party services.
+
+Greeks LLC does not claim ownership of third-party materials merely because they appear on or are accessible through a Website.
+
+Your use of third-party materials may be subject to separate terms, licenses, copyrights, trademarks, or other restrictions established by their respective owners.
+
+## 6. Trademarks
+
+**Bacon, Egg & Cheese™** and associated branding may be trademarks or other protected identifiers of Greeks LLC or the applicable team or organization, as specified on the relevant Website.
+
+Other names, logos, trademarks, service marks, and trade names appearing on the Websites belong to their respective owners.
+
+You may not use Greeks LLC trademarks or branding in a manner that could reasonably create confusion about your affiliation with, sponsorship by, or endorsement by Greeks LLC.
+
+Nothing in these Terms grants you a license to use any trademark, logo, or other brand identifier belonging to Greeks LLC or a third party.
+
+## 7. User-Submitted Content
+
+Some Websites may allow users to submit information, comments, photographs, messages, applications, forms, or other materials (“User Content”).
+
+You retain ownership of any rights you may have in User Content that you submit.
+
+By submitting User Content to a Website, you represent that:
+
+* You have the necessary rights and permissions to submit the material;
+* Your submission does not knowingly violate another person's intellectual-property rights;
+* Your submission does not unlawfully disclose another person's private or confidential information; and
+* Your submission does not violate applicable law or these Terms.
+
+Where necessary to operate, display, maintain, or improve the Website, you grant Greeks LLC a non-exclusive, worldwide, royalty-free license to use, reproduce, display, and technically process the User Content you submit.
+
+Greeks LLC does not obtain ownership of your User Content merely because you submit it.
+
+## 8. Prohibited Activities
+
+You agree not to use the Websites to:
+
+* Violate any applicable law or regulation;
+* Infringe or misappropriate intellectual-property rights;
+* Attempt to gain unauthorized access to systems, accounts, databases, or servers;
+* Interfere with the operation or security of a Website;
+* Introduce malicious software, code, or other harmful material;
+* Conduct unauthorized vulnerability testing or penetration testing;
+* Scrape or harvest information in a manner that places an unreasonable burden on the Websites;
+* Circumvent technical restrictions or access controls;
+* Impersonate Greeks LLC, a robotics team, a team member, sponsor, school, or another person or organization;
+* Use Website content to mislead others about an affiliation or endorsement;
+* Attempt to obtain information that is not intentionally made publicly available; or
+* Use the Websites for any unlawful, fraudulent, or abusive purpose.
+
+## 9. Website Availability
+
+Greeks LLC may modify, suspend, discontinue, or restrict access to any Website or portion of a Website at any time.
+
+We do not guarantee that a Website will always be available, uninterrupted, secure, error-free, or compatible with every device, browser, operating system, or network.
+
+Websites may occasionally be unavailable because of maintenance, hosting issues, software updates, security incidents, technical failures, or circumstances outside our control.
+
+## 10. Accuracy of Information
+
+The Websites may contain information about robotics teams, projects, events, competitions, designs, activities, or other subjects.
+
+Greeks LLC makes reasonable efforts to maintain accurate information but does not guarantee that all information will always be complete, current, or error-free.
+
+Information may become outdated or may be changed without notice.
+
+Nothing on the Websites should be interpreted as a guarantee regarding future events, competition results, team performance, schedules, availability, or other circumstances that may change.
+
+## 11. External Websites and Services
+
+The Websites may contain links to websites, applications, social-media platforms, services, or resources operated by third parties.
+
+These links are provided for convenience or informational purposes.
+
+Greeks LLC does not necessarily control, operate, or endorse third-party websites or services and is not responsible for their content, availability, security, privacy practices, or terms.
+
+Your use of third-party websites is governed by the applicable third party's own terms and policies.
+
+## 12. Disclaimer of Warranties
+
+To the fullest extent permitted by applicable law, the Websites and their content are provided on an “as is” and “as available” basis.
+
+Greeks LLC makes no warranties or representations, express or implied, regarding the Websites, including warranties concerning accuracy, reliability, availability, merchantability, fitness for a particular purpose, non-infringement, or uninterrupted operation.
+
+Greeks LLC does not guarantee that the Websites or their servers are free from viruses, malware, security vulnerabilities, or other harmful components.
+
+## 13. Limitation of Liability
+
+To the fullest extent permitted by applicable law, Greeks LLC and its owners, members, officers, employees, contractors, contributors, and service providers will not be liable for indirect, incidental, consequential, special, exemplary, or punitive damages arising out of or relating to your access to or use of the Websites.
+
+This may include, without limitation, loss of data, loss of profits, loss of business opportunities, interruption of service, or damage to devices or systems.
+
+Nothing in these Terms is intended to exclude or limit liability that cannot legally be excluded or limited under applicable law.
+
+## 14. Indemnification
+
+To the extent permitted by applicable law, you agree to defend, indemnify, and hold harmless Greeks LLC and its owners, members, officers, employees, contractors, contributors, and service providers from claims, damages, liabilities, losses, costs, and expenses arising out of:
+
+* Your violation of these Terms;
+* Your unlawful use of a Website;
+* Your infringement or violation of another person's rights; or
+* User Content that you submit through a Website.
+
+## 15. Copyright Complaints
+
+Greeks LLC respects the intellectual-property rights of others.
+
+If you believe that material appearing on a Website infringes your copyright, you may contact Greeks LLC with information sufficient to identify:
+
+1. The copyrighted work you believe has been infringed;
+2. The material you believe is infringing and where it appears;
+3. Your contact information;
+4. A statement that you have a good-faith belief that the disputed use is not authorized by the copyright owner, its agent, or applicable law; and
+5. A statement that the information you provide is accurate and that you are authorized to act on behalf of the copyright owner, where applicable.
+
+Greeks LLC may investigate reported copyright concerns and may remove or restrict access to material where appropriate.
+
+## 16. Permissions and Licensing Requests
+
+If you would like permission to reproduce, modify, distribute, commercially use, or otherwise make use of copyrighted Website material beyond the permissions granted by these Terms, please contact Greeks LLC before doing so.
+
+Permission should be obtained in writing.
+
+Permission for one particular use does not automatically grant permission for future uses.
+
+## 17. Children's Privacy
+
+The Websites may be viewed by individuals of different ages. Unless a particular Website expressly states otherwise, the Websites are not intended to knowingly collect personal information from children in circumstances where applicable law requires parental consent.
+
+Where applicable, additional privacy requirements may apply depending on the nature of the Website, the information collected, and the age of the user.
+
+Please review the applicable Privacy Policy for additional information regarding the collection and use of personal information.
+
+## 18. Privacy
+
+Your use of the Websites may involve the collection or processing of information as described in the applicable Privacy Policy.
+
+The Privacy Policy, when applicable, forms part of these Terms by reference.
+
+## 19. Changes to These Terms
+
+Greeks LLC may update or modify these Terms from time to time.
+
+When changes are made, the “Last Updated” date at the beginning of these Terms will be updated.
+
+Your continued use of a Website after revised Terms are posted constitutes acceptance of the revised Terms to the extent permitted by applicable law.
+
+If a material change requires additional notice or consent under applicable law, Greeks LLC will provide such notice or obtain such consent as required.
+
+## 20. Severability
+
+If any provision of these Terms is determined to be invalid, unlawful, or unenforceable, that provision will be enforced to the maximum extent permitted by law, and the remaining provisions will continue in effect.
+
+## 21. No Waiver
+
+The failure of Greeks LLC to enforce any provision of these Terms does not constitute a waiver of its right to enforce that provision in the future.
+
+## 22. Entire Agreement
+
+These Terms, together with any applicable Privacy Policy, Copyright and Trademark Notice, and other policies expressly incorporated into these Terms, constitute the agreement governing your use of the applicable Websites, except where additional terms expressly apply.
+
+## 23. Governing Law
+
+These Terms will be governed by and interpreted in accordance with the laws applicable to Greeks LLC, without regard to conflict-of-law principles, except to the extent that applicable law requires otherwise.
+
+Any dispute concerning these Terms or the Websites will be handled in accordance with applicable law and any legally enforceable dispute-resolution requirements.
+
+## 24. Contact
+
+Questions regarding these Terms, intellectual-property permissions, copyright concerns, or other legal matters may be directed to Greeks LLC through the official contact information provided on the applicable Website.
+
+**Greeks LLC**
+
+**Legal Notices:** [Insert Legal Contact Email]
+
+**Website:** [Insert Official Website URL]
+
+---
+
+**© 2026 Greeks LLC. All rights reserved.**
+
+Bacon, Egg & Cheese™ and other marks identified as belonging to Greeks LLC are protected to the extent provided by applicable law. All other trademarks and intellectual property remain the property of their respective owners.

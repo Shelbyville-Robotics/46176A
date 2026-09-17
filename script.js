@@ -3,17 +3,33 @@ window.addEventListener('load', () => {
     const loader = document.getElementById('loader-wrapper');
     const content = document.getElementById('content');
 
-    // Small timeout so you can actually see the cool animation
-    setTimeout(() => {
-        loader.style.opacity = '0';
-        
-        // Remove from DOM and show content
-        setTimeout(() => {
-            loader.style.display = 'none';
+    // 1. Check if the loader has already run in this session
+    if (sessionStorage.getItem("hasLoaded")) {
+        if (loader) loader.style.display = 'none';
+        if (content) {
             content.classList.remove('hidden');
             content.style.opacity = '1';
             content.style.transform = 'translateY(0)';
-            document.body.style.overflow = 'auto'; // Re-enable scrolling
+        }
+        document.body.style.overflow = 'auto'; // Re-enable scrolling immediately
+        return; // Exit the function so it skips the animation
+    }
+
+    // 2. Otherwise, run the animation for the first time
+    setTimeout(() => {
+        if (loader) loader.style.opacity = '0';
+        
+        setTimeout(() => {
+            if (loader) loader.style.display = 'none';
+            if (content) {
+                content.classList.remove('hidden');
+                content.style.opacity = '1';
+                content.style.transform = 'translateY(0)';
+            }
+            document.body.style.overflow = 'auto'; 
+            
+            // 3. Mark it as "loaded" for this session
+            sessionStorage.setItem("hasLoaded", "true");
         }, 800);
     }, 2000); 
 });
@@ -187,3 +203,8 @@ function updateLeaderboard() {
 
 // Run the update
 updateLeaderboard();
+AOS.init({
+    duration: 800, // Animation speed in milliseconds
+    once: true,    // Only animate once when scrolling down
+    offset: 100    // Trigger slightly before the element enters the screen
+});

@@ -3,106 +3,129 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Robot | Tech Specs</title>
+    <title>BEC Robotics - Robot Specs</title>
     <link rel="stylesheet" href="style.css">
+    <!-- AOS Animation Library CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
 
-    <div id="loader-wrapper">
-        <div class="loader">
-            <div class="hex-orbit"></div>
-            <div class="hex-center"></div>
+    <!-- Global Navigation -->
+    <nav class="navbar">
+        <div class="logo">
+            <span class="bracket">[</span> BEC ROBOTICS <span class="bracket">]</span>
         </div>
-        <p>SCANNING HARDWARE...</p>
-    </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="robot.html" class="active">Robot</a></li>
+            <li><a href="comp.html">Competitions</a></li>
+            <li><a href="season.html">Season</a></li>
+            <li><a href="docs.html">Docs</a></li>
+        </ul>
+    </nav>
 
-    <main id="content" class="hidden">
-        <nav>
-            <div class="logo">ROBO-TEAM</div>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="robot.html" class="active">The Robot</a></li>
-                <li><a href="comp.html">Competitions</a></li>
-                <li><a href="docs.html">Documents</a></li>
-                <li><a href="season.html">Season</a></li>
-            </ul>
-        </nav>
+    <!-- Main Content Container -->
+    <main id="content">
+        
+        <!-- Robot Hero Section -->
         <section class="robot-hero">
-            <div class="hero-text">
-                <h1>Model: <span>V-4 "Titan"</span></h1>
-                <p>Engineered for speed. Optimized for precision.</p>
+            <h1 data-aos="fade-down" data-aos-duration="1000">UNIT_SPEC: GRILL-MASTER v1</h1>
+            <p class="floating-text" data-aos="fade-in" data-aos-delay="300">STATUS: FULLY OPERATIONAL // READY FOR TOURNAMENT GRID</p>
+        </section>
+
+        <!-- Blueprint / CAD Section -->
+        <section class="blueprint-section">
+            <div class="section-header" data-aos="fade-right">
+                <h2><span>01.</span> STRUCTURAL BLUEPRINT</h2>
+                <div class="line"></div>
             </div>
-            <div class="robot-blueprint">
+            
+            <div class="robot-blueprint-container" data-aos="zoom-in" data-aos-duration="1000">
+                <!-- Replace with your actual robot cad/image link -->
                 <img src="docs/photos/Image_placeholder.png" alt="Robot Blueprint">
+                <div class="blueprint-overlay"></div>
             </div>
         </section>
 
-        <section class="specs-section">
-            <h2>Technical Specifications</h2>
-            <div class="specs-container">
-                <table class="specs-table">
-                    <tr>
-                        <td>Drivetrain</td>
-                        <td>8-Wheel Base, 3 wheels per Drivetrain and 2 motors (Omni-directional)</td>
-                    </tr>
-                    <tr>
-                        <td>Motors</td>
-                        <td>5x Vex blue motors</td>
-                    </tr>
-                    <tr>
-                        <td>Sensors</td>
-                        <td>Ai Vision(2), Gyroscope, Ultasonic(2), distance(3)</td>
-                    </tr>
-                    <tr>
-                        <td>Weight</td>
-                        <td>35.5 lbs, 12lbs Drivetrain</td>
-                    </tr>
-                    <tr>
-                        <td>Control System</td>
-                        <td>We are expanding on our ai coding "Javis Mk:4" / Java Based</td>
-                    </tr>
-                </table>
+        <!-- Core Subsystems Grid -->
+        <section class="subsystems-section">
+            <div class="section-header" data-aos="fade-right">
+                <h2><span>02.</span> CORE SUBSYSTEMS</h2>
+                <div class="line"></div>
+            </div>
+
+            <div class="specs-grid">
+                <!-- Card 1 -->
+                <div class="spec-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card-icon">⚡</div>
+                    <h3>DRIVE TRAIN</h3>
+                    <p>4-Motor Swerve Drive configured for high-speed maneuverability across the game board.</p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="spec-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card-icon">🦾</div>
+                    <h3>INTAKE MECHANISM</h3>
+                    <p>Custom-molded active rollers designed for rapid game piece acquisition.</p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="spec-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card-icon">🎯</div>
+                    <h3>SCORING ARM</h3>
+                    <p>Pneumatic-assisted linear lift capable of reaching top-tier scoring nodes with sub-millimeter precision.</p>
+                </div>
             </div>
         </section>
-        <section class="systems-grid">
-            <h2>Sub systems</h2>
-            <div class="system-card">
-                <h3>The Intake</h3>
-                <p>Uses 2 Combine style intakes to pick up a max of 10 cubes at a time</p>
+
+        <!-- Live Robot Gallery (Fetched via Script) -->
+        <section class="gallery-section">
+            <div class="section-header" data-aos="fade-right">
+                <h2><span>03.</span> FIELD CAPTURES</h2>
+                <div class="line"></div>
             </div>
-            <div class="system-card">
-                <h3>The Lift</h3>
-                <p>Uses a 4 motor winch design to pull up the blocks.</p>
-            </div>
-            <div class="system-card">
-                <h3>The Brain</h3>
-                <p>The Robot uses apoxmantly 20 ports, 10 motors, 9 sensor, 1 vex net</p>
+
+            <div id="robot-gallery" class="gallery-grid" data-aos="fade-up">
+                <!-- JavaScript will automatically populate images here -->
+                <p class="loading-text">Loading visual data...</p>
             </div>
         </section>
+
     </main>
 
-    <script src="script.js"></script>
-<footer>
+    <!-- Footer -->
+    <footer>
         <div class="footer-container">
-            <div class="sponsor-logos">
-                <a href="https://sponsor-website.com" target="_blank" class="logo-box">
-                 <img src="docs/photos/Image_placeholder.png" alt="Sponsor Name">
-                </a>
-
-                 <a href="https://another-sponsor.com" target="_blank" class="logo-box">
-                     <img src="docs/photos/Image_placeholder.png" alt="Another Sponsor">
-                 </a>
-         </div>
-
+            <div class="sponsors">
+                <h3>PARTNER NETWORK</h3>
+                <div class="sponsor-logos">
+                    <!-- Sponsor logos injected or listed here -->
+                    <div class="logo-box"><span>SPONSOR 1</span></div>
+                    <div class="logo-box"><span>SPONSOR 2</span></div>
+                </div>
+            </div>
             <div class="footer-bottom">
                 <div class="social-links">
-                    <a href="#">Instagram</a>
-                    <a href="#">YouTube</a>
-                    <a href="https://github.com/Shelbyville-Robotics">GitHub</a>
+                    <a href="#" target="_blank">INSTAGRAM</a>
+                    <a href="/Legal/">Policies</a>
+                    <a href="#" target="_blank">YOUTUBE</a>
                 </div>
-                <p>&copy; 2026-2027 Greeks LLC. All systems operational.</p>
+                <p>© 2026 BACON EGG & CHEESE ROBOTICS. ALL RIGHTS RESERVED.</p>
             </div>
         </div>
     </footer>
+
+    <!-- AOS Animation Library JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Initialize animations
+        AOS.init({
+            duration: 900,
+            once: true,
+            offset: 80
+        });
+    </script>
+    <!-- Main Site Script -->
+    <script src="script.js"></script>
 </body>
 </html>

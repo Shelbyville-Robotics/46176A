@@ -1,0 +1,317 @@
+# Copyright, Trademark & Intellectual Property Notice
+
+**Last Updated:** September 17, 2026
+
+**Entity:** Greeks LLC
+
+This Copyright, Trademark & Intellectual Property Notice (“Notice”) applies to websites and online materials operated or maintained by Greeks LLC (“Greeks LLC,” “we,” “us,” or “our”), including websites associated with **Bacon, Egg & Cheese™** and **HappyMeal**.
+
+The purpose of this Notice is to identify intellectual-property rights associated with these Websites and to establish the permitted and prohibited uses of their original materials.
+
+## 1. Copyright Notice
+
+© 2026 Greeks LLC. All rights reserved.
+
+Unless otherwise indicated, the original materials created specifically by Greeks LLC for these Websites are protected by applicable copyright and other intellectual-property laws.
+
+Protected materials may include, but are not limited to:
+
+* Website designs and layouts;
+* User-interface designs;
+* Original graphics and illustrations;
+* Original photographs;
+* Written website content;
+* Original animations;
+* Custom icons and visual elements;
+* Source code;
+* Backend code;
+* Frontend code;
+* Custom scripts;
+* Database structures;
+* Website architecture;
+* Custom components and functionality;
+* Page structure and organization;
+* Original documentation;
+* Custom templates;
+* Branding elements; and
+* Other original creative or technical materials developed by Greeks LLC.
+
+The absence of a copyright notice, watermark, or other ownership statement does not mean that material is free to copy or use.
+
+## 2. Ownership of Greeks LLC Materials
+
+Greeks LLC retains all rights, title, and interest in original materials created and owned by Greeks LLC, except where rights have been expressly transferred, licensed, or otherwise granted to another party.
+
+Nothing on these Websites should be interpreted as transferring ownership of Greeks LLC's intellectual property to a Website visitor.
+
+The fact that source code, design elements, images, or other materials are technically accessible through a web browser does not constitute permission to reproduce or redistribute those materials.
+
+## 3. Website Design and User Interface
+
+The visual appearance and structure of these Websites may constitute original creative work.
+
+This may include the combination and arrangement of:
+
+* Colors;
+* Typography;
+* Navigation;
+* Page layouts;
+* Animations;
+* Transitions;
+* Interactive elements;
+* Graphics;
+* Menus;
+* Components;
+* Spacing;
+* Visual effects;
+* Custom interfaces; and
+* Other design elements.
+
+Individual design elements may not independently be protected by copyright, and the use of common web-design conventions does not necessarily constitute infringement.
+
+However, the unauthorized copying or substantial reproduction of original protected design work, artwork, or other creative material is prohibited to the extent provided by applicable law.
+
+## 4. Source Code and Software
+
+Original source code developed by Greeks LLC for these Websites is protected by applicable intellectual-property laws.
+
+Unless a particular portion of code is expressly identified as open source or otherwise licensed for reuse, you may not copy, redistribute, publish, sell, sublicense, or incorporate substantial portions of Greeks LLC's proprietary source code into another website, application, product, or service without written permission.
+
+Viewing publicly accessible code through ordinary technical means does not grant ownership or a license to reuse that code.
+
+Some Websites may contain open-source software, third-party libraries, frameworks, APIs, or other software governed by separate licenses. Those materials remain subject to their applicable licenses.
+
+Where a third-party license grants rights that differ from this Notice, the applicable third-party license governs that material.
+
+## 5. Graphics, Artwork, and Photography
+
+Original graphics, illustrations, photographs, artwork, and other visual materials created or commissioned by Greeks LLC may be protected by copyright.
+
+You may not reproduce, modify, distribute, publicly display, sell, or commercially use protected visual materials without appropriate permission or a license.
+
+Some images or visual materials may belong to robotics teams, schools, sponsors, photographers, students, parents/guardians, competition organizations, or other third parties.
+
+Greeks LLC does not claim ownership of third-party materials merely because they appear on a Website.
+
+## 6. Robotics Team and Student Materials
+
+The Websites may contain materials associated with robotics teams and educational activities.
+
+These materials may include:
+
+* Team names;
+* Team logos;
+* Robot photographs;
+* Competition photographs;
+* Robot designs;
+* CAD models;
+* Engineering documentation;
+* Build information;
+* Student-created artwork;
+* Videos;
+* Presentations;
+* Team history;
+* Sponsor materials; and
+* Other team-related content.
+
+Ownership of these materials may belong to the applicable team, school, organization, student, parent/guardian, sponsor, photographer, or another rights holder rather than Greeks LLC.
+
+Nothing in this Notice should be interpreted as a claim that Greeks LLC owns materials that belong to another rights holder.
+
+Where appropriate, permission to display such materials has been obtained from the applicable rights holder or organization.
+
+## 7. Third-Party Materials
+
+The Websites may contain materials licensed from or provided by third parties.
+
+Third-party materials may include:
+
+* Fonts;
+* Stock images;
+* Icons;
+* Libraries;
+* Frameworks;
+* Open-source software;
+* Embedded media;
+* Logos;
+* Trademarks;
+* Photographs;
+* Videos;
+* APIs; and
+* Other externally provided resources.
+
+Such materials remain subject to the intellectual-property rights and licenses of their respective owners.
+
+Users must comply with any applicable third-party license when using such materials.
+
+## 8. Trademark Notice
+
+**Bacon, Egg & Cheese™** is a trademark of Greeks LLC, to the extent indicated by the applicable trademark rights and registrations.
+
+Other trademarks, service marks, logos, team names, organization names, and trade names displayed on the Websites may belong to Greeks LLC or their respective owners.
+
+Examples may include robotics organizations, competition organizations, schools, sponsors, technology companies, and other third parties.
+
+Nothing on these Websites grants permission to use a trademark or logo in a manner that suggests sponsorship, endorsement, affiliation, or ownership where none exists.
+
+The ™ symbol may be used to identify a claimed trademark. The ® symbol should only be used in connection with a federally registered trademark where such use is legally appropriate.
+
+## 9. Permitted Personal and Educational Use
+
+You may access and use publicly available Website content for reasonable personal, informational, or educational purposes.
+
+You may:
+
+* View publicly available pages;
+* Share links to publicly available pages;
+* Print reasonable portions for personal or educational reference; and
+* Save reasonable portions of publicly available information for personal reference.
+
+Any permitted use must preserve applicable copyright, trademark, attribution, and ownership notices.
+
+This permission does not authorize the reproduction of an entire Website, substantial portions of its content, proprietary source code, or its overall design.
+
+## 10. Prohibited Uses
+
+Except where permitted by applicable law, an applicable license, or written permission from the appropriate rights holder, you may not:
+
+* Copy an entire Website or substantial portions of a Website;
+* Reproduce the Website's original design for another website;
+* Copy proprietary source code;
+* Redistribute proprietary source code;
+* Reproduce original graphics or artwork;
+* Remove copyright or trademark notices;
+* Remove attribution or licensing information;
+* Sell or commercially exploit protected Website materials;
+* Create derivative works from protected materials;
+* Mirror a Website or its substantial content on another server;
+* Scrape and republish substantial amounts of Website content;
+* Present Greeks LLC's work as your own;
+* Claim ownership of Website materials;
+* Use Website materials to create a substantially similar competing Website; or
+* Use Greeks LLC branding in a way that falsely implies affiliation or endorsement.
+
+This section does not prohibit activities that are independently permitted under applicable law.
+
+## 11. Linking to the Websites
+
+You may link to publicly accessible pages of the Websites for informational purposes.
+
+A link should not falsely imply that Greeks LLC sponsors, endorses, operates, or is affiliated with the website or organization containing the link.
+
+You may not frame, mirror, or reproduce the Websites within another website without written permission.
+
+## 12. User Screenshots and References
+
+Users may take reasonable screenshots of publicly available portions of the Websites for personal, educational, review, commentary, or similar lawful purposes.
+
+Screenshots may not be used in a manner that falsely suggests endorsement, affiliation, ownership, or sponsorship by Greeks LLC.
+
+Commercial use or substantial reproduction of Website materials may require permission from the applicable rights holder.
+
+## 13. Open-Source and Licensed Material
+
+Some code or other materials used by the Websites may be available under open-source or other third-party licenses.
+
+Such materials are not necessarily owned exclusively by Greeks LLC.
+
+Applicable license notices and copyright statements should be preserved where required by the relevant license.
+
+Greeks LLC does not attempt to restrict rights that have been granted to the public under a valid open-source or third-party license.
+
+## 14. Requests for Permission
+
+If you would like to use material from one of the Websites beyond the permissions granted by this Notice, you may request permission from Greeks LLC.
+
+Requests may include:
+
+* Reproducing website graphics;
+* Reusing website designs;
+* Reusing source code;
+* Publishing Website content;
+* Using photographs;
+* Using logos or branding;
+* Commercial use;
+* Educational projects requiring substantial reproduction; or
+* Other forms of reproduction or distribution.
+
+Permission should be obtained in writing before the intended use.
+
+Permission granted for one specific use does not automatically grant permission for other uses.
+
+## 15. Reporting Potential Infringement
+
+If you believe that material appearing on one of the Websites infringes your copyright or other intellectual-property rights, please contact Greeks LLC with sufficient information to allow us to investigate the matter.
+
+Where applicable, a report should include:
+
+1. Identification of the copyrighted or otherwise protected work;
+2. Identification and location of the material allegedly infringing your rights;
+3. Your name and contact information;
+4. A description of your rights in the material;
+5. A statement explaining why you believe the use is unauthorized; and
+6. Any additional information reasonably necessary to evaluate the claim.
+
+Greeks LLC may investigate legitimate reports and may take appropriate action where warranted.
+
+## 16. Unauthorized Copies of Greeks LLC Materials
+
+If Greeks LLC becomes aware that its protected Website materials have been copied, redistributed, or used without authorization, Greeks LLC may take appropriate action.
+
+Depending on the circumstances, this may include:
+
+* Contacting the person or organization responsible;
+* Requesting removal of the material;
+* Requesting correction or attribution;
+* Submitting a copyright or intellectual-property complaint;
+* Requesting removal from a hosting or platform provider;
+* Pursuing available legal remedies; or
+* Taking other action permitted by applicable law.
+
+The presence of this Notice does not mean that Greeks LLC will pursue every instance of unauthorized use.
+
+## 17. No Transfer of Rights
+
+Except where expressly stated, accessing or using the Websites does not grant you:
+
+* Ownership of Website materials;
+* A copyright license;
+* A trademark license;
+* A patent license;
+* A license to proprietary source code;
+* A license to reproduce Website designs; or
+* Any other intellectual-property rights.
+
+Any rights not expressly granted remain with the applicable rights holder.
+
+## 18. Fair Use and Other Legal Rights
+
+Nothing in this Notice is intended to restrict rights that cannot legally be restricted.
+
+Applicable law may permit certain uses of copyrighted or trademarked material without permission, including certain forms of criticism, commentary, news reporting, teaching, scholarship, research, or other legally protected uses.
+
+Whether a particular use is legally permitted depends on the specific circumstances and applicable law.
+
+## 19. Changes to This Notice
+
+Greeks LLC may update this Copyright, Trademark & Intellectual Property Notice from time to time.
+
+When changes are made, the “Last Updated” date at the beginning of this Notice will be updated.
+
+The current version posted on the applicable Website will govern future use of the Website's materials.
+
+## 20. Contact
+
+Questions concerning copyright, trademarks, licensing, permissions, or intellectual-property matters may be directed to:
+
+**Greeks LLC**
+
+**Intellectual Property Contact:** [Insert Legal Contact Email]
+
+**Website:** [Insert Official Website URL]
+
+---
+
+**© 2026 Greeks LLC. All rights reserved.**
+
+**Bacon, Egg & Cheese™** is a trademark of Greeks LLC, where applicable. All other trademarks, service marks, logos, names, and intellectual property belong to their respective owners unless otherwise stated.

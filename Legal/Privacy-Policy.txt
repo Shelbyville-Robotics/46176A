@@ -1,0 +1,262 @@
+# Privacy Policy
+
+**Last Updated:** September 17, 2026
+
+**Entity:** Greeks LLC
+
+Greeks LLC (“Greeks LLC,” “we,” “us,” or “our”) respects your privacy. This Privacy Policy explains how information may be collected, used, stored, and disclosed when you visit or use websites operated by Greeks LLC, including websites associated with the **Bacon, Egg & Cheese™** and **HappyMeal** robotics teams (collectively, the “Websites”).
+
+By using the Websites, you acknowledge the practices described in this Privacy Policy.
+
+## 1. Scope of This Privacy Policy
+
+This Privacy Policy applies to information collected through Websites operated or maintained by Greeks LLC.
+
+It applies to information collected directly through the Websites as well as certain information that may be automatically collected when you access or use the Websites.
+
+This Privacy Policy does not necessarily apply to third-party websites, applications, services, or platforms that may be linked to or embedded within the Websites. Those services are governed by their own privacy policies.
+
+## 2. Information We Collect
+
+The amount and type of information collected depends on how you use the Websites.
+
+### 2.1 Information You Provide
+
+Greeks LLC may collect information that you voluntarily provide through the Websites.
+
+Depending on the features available on a particular Website, this may include:
+
+* Name;
+* Email address;
+* Contact information;
+* Messages or other information submitted through contact forms;
+* Information provided when requesting permission to use Website materials;
+* Information submitted through team-related forms; and
+* Other information you voluntarily provide to us.
+
+You are not required to provide personal information simply to browse publicly available portions of the Websites unless a particular feature requires it.
+
+### 2.2 Automatically Collected Information
+
+When you visit the Websites, certain technical information may be automatically received by our hosting provider or other technical service providers.
+
+Depending on the Website's configuration, this information may include:
+
+* IP address;
+* Browser type and version;
+* Operating system;
+* Device type;
+* Approximate geographic information derived from an IP address;
+* Pages or resources requested;
+* Referring website;
+* Date and time of requests;
+* General usage information; and
+* Technical information necessary to operate, secure, and troubleshoot the Websites.
+
+We do not necessarily associate this information with your name or other identifying information.
+
+## 3. Cookies and Similar Technologies
+
+The Websites may use cookies or similar technologies.
+
+Cookies are small files or pieces of information stored by your browser that can help websites remember information, maintain functionality, understand usage, or improve performance.
+
+Depending on the services enabled on a particular Website, cookies or similar technologies may be used for purposes such as:
+
+* Maintaining website functionality;
+* Remembering preferences;
+* Security;
+* Understanding website traffic;
+* Measuring Website performance;
+* Diagnosing technical problems; and
+* Improving the Websites.
+
+Analytics/tracking:**
+
+ The Websites may use third-party analytics services to understand how visitors interact with the Websites. These services may collect information such as device information, browser information, pages viewed, approximate location, and usage patterns. The use of such services is subject to the applicable provider's privacy practices.
+
+Where applicable, you may be able to control cookies through your browser settings. Disabling certain cookies may affect Website functionality.
+
+## 4. How We Use Information
+
+Greeks LLC may use collected information for legitimate business, operational, educational, and website-related purposes, including to:
+
+* Operate and maintain the Websites;
+* Respond to inquiries and messages;
+* Provide requested services or information;
+* Maintain website security;
+* Detect and prevent abuse, fraud, or unauthorized activity;
+* Diagnose technical problems;
+* Monitor Website performance;
+* Improve Website functionality and design;
+* Understand general Website usage;
+* Maintain records of communications;
+* Comply with applicable laws and legal obligations; and
+* Protect the rights, property, and safety of Greeks LLC and others.
+
+We will not use personal information for purposes materially different from those described in this Privacy Policy without providing appropriate notice or obtaining consent where required by applicable law.
+
+## 5. How We Share Information
+
+Greeks LLC does not sell your personal information merely because you visit or use the Websites.
+
+We may disclose information to third parties when reasonably necessary to operate the Websites or comply with legal obligations.
+
+These parties may include:
+
+### Service Providers
+
+We may use third-party companies to provide services such as:
+
+* Website hosting;
+* Domain and DNS services;
+* Email delivery;
+* Website analytics;
+* Security and fraud prevention;
+* Database hosting;
+* Cloud storage;
+* Website performance monitoring; and
+* Other technical infrastructure.
+
+These providers may process information on our behalf as necessary to provide their services.
+
+### Legal Requirements
+
+We may disclose information if we reasonably believe disclosure is necessary to:
+
+* Comply with a law, regulation, subpoena, court order, or other legal process;
+* Protect the rights or property of Greeks LLC;
+* Protect the safety of users or others;
+* Investigate suspected fraud, abuse, or unlawful activity; or
+* Respond to a lawful request from a governmental authority.
+
+### Business Transfers
+
+If Greeks LLC undergoes a merger, acquisition, reorganization, sale of assets, dissolution, or similar transaction, information associated with the Websites may be transferred as part of that transaction, subject to applicable law.
+
+## 6. Third-Party Services and Links
+
+The Websites may contain links to or integrations with third-party services.
+
+Examples may include social-media platforms, video-hosting services, analytics providers, mapping services, competition platforms, code repositories, or other external websites.
+
+Greeks LLC does not control the privacy practices of third-party services.
+
+When you interact with a third-party service, that service may collect information according to its own privacy policy and terms.
+
+We encourage you to review the privacy policies of third-party services before providing them with personal information.
+
+## 7. Information Security
+
+Greeks LLC takes reasonable measures appropriate to the nature of the information we handle to protect information against unauthorized access, alteration, disclosure, or destruction.
+
+However, no website, computer system, network, or method of transmitting information over the Internet can be guaranteed to be completely secure.
+
+Accordingly, we cannot guarantee absolute security of information transmitted to or through the Websites.
+
+## 8. Data Retention
+
+We retain information for only as long as reasonably necessary for the purposes described in this Privacy Policy, unless a longer retention period is required or permitted by law.
+
+The length of time information is retained may depend on:
+
+* The purpose for which it was collected;
+* Whether the information is needed to provide a service;
+* Legal or regulatory requirements;
+* Security and fraud-prevention needs; and
+* Legitimate business or recordkeeping requirements.
+
+Information that is no longer reasonably necessary may be deleted, anonymized, or otherwise disposed of in accordance with our practices and applicable law.
+
+## 9. Children's Privacy
+
+The Websites may be accessible to students, children, and individuals of various ages, particularly because certain Websites are associated with educational and robotics activities.
+
+We do not intentionally collect personal information from children in circumstances where applicable law requires verifiable parental consent unless the applicable legal requirements have been satisfied.
+
+If a Website is intended for or directed toward children under 13, additional privacy procedures may apply.
+
+If you believe that a child has provided personal information through a Website in circumstances where such collection was not appropriate, please contact us using the information provided below.
+
+Where required by applicable law, we will take reasonable steps to investigate and address the situation.
+
+## 10. Student and Team Information
+
+Some Website content may relate to robotics teams, competitions, schools, students, mentors, sponsors, or team activities.
+
+Information about individuals may be displayed only where Greeks LLC or the applicable team/organization has an appropriate basis or permission to publish it.
+
+Because robotics Websites may contain photographs, competition information, team member information, project information, or similar material, some content may have been provided or authorized by a team, school, organization, student, parent/guardian, mentor, or other authorized individual.
+
+If you believe that personal information or an image has been published on a Website improperly, please contact us so that the matter can be reviewed.
+
+## 11. Your Choices
+
+Depending on the information involved and applicable law, you may have rights concerning your personal information.
+
+These may include the ability to:
+
+* Request information about personal information we maintain about you;
+* Request correction of inaccurate information;
+* Request deletion of certain information;
+* Withdraw consent where processing is based on consent;
+* Request information about how your information is used or disclosed; and
+* Exercise other rights provided by applicable law.
+
+Not every request will necessarily apply in every circumstance. Certain information may need to be retained for legal, security, operational, or other legitimate purposes.
+
+To make a privacy-related request, contact us using the information provided below.
+
+## 12. Do Not Track Signals
+
+Some web browsers provide “Do Not Track” or similar signals.
+
+Because there is not a universally accepted technical standard governing how websites should respond to such signals in every circumstance, the Websites may not respond to all browser-based Do Not Track signals.
+
+Where legally required, we will honor applicable privacy choices and signals.
+
+## 13. International Visitors
+
+The Websites may be accessible from locations outside the United States.
+
+If you access the Websites from another country, information collected through the Websites may be processed or stored in the United States or other locations where Greeks LLC or its service providers operate.
+
+Privacy and data-protection laws in those locations may differ from those in your jurisdiction.
+
+## 14. Changes to This Privacy Policy
+
+Greeks LLC may update this Privacy Policy from time to time.
+
+When changes are made, the “Last Updated” date at the beginning of this Privacy Policy will be updated.
+
+If material changes are made, we may provide additional notice where appropriate or required by applicable law.
+
+Your continued use of the Websites after an updated Privacy Policy is posted constitutes acknowledgment of the updated policy to the extent permitted by applicable law.
+
+## 15. Contact Us
+
+If you have questions about this Privacy Policy, wish to make a privacy-related request, or believe that information has been handled improperly, please contact Greeks LLC.
+
+**Greeks LLC**
+
+**Privacy Contact:** [Insert Privacy Email Address]
+
+**Website:** [Insert Official Website URL]
+
+## 16. Summary
+
+In general:
+
+* We collect information that you voluntarily provide and certain technical information generated when you use the Websites.
+* We use information primarily to operate, maintain, secure, and improve the Websites and respond to communications.
+* We do not sell your personal information merely because you visit the Websites.
+* Third-party services may collect information according to their own policies.
+* We take reasonable measures to protect information but cannot guarantee absolute security.
+* Additional protections may apply to children's and students' information where required by law.
+* You may contact us with questions or privacy-related requests.
+
+---
+
+**© 2026 Greeks LLC. All rights reserved.**
+
+This Privacy Policy applies to the Websites operated by Greeks LLC, including Websites associated with Bacon, Egg & Cheese™ and HappyMeal, except where a particular Website provides a separate privacy policy.
