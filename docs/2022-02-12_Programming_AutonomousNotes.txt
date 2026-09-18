@@ -1,0 +1,16 @@
+Autonomous Notes
+Team: Bumblebee
+Season: 2021-2022
+
+Objectives:
+- Create a repeatable starting routine.
+- Reduce unnecessary movement.
+- Record sensor readings during testing.
+
+Testing method:
+Run the same autonomous routine five times. Record whether each run completes successfully and note where variation occurs.
+
+Possible improvements:
+- Use an inertial sensor for turns.
+- Add timeout values to prevent stalled mechanisms.
+- Use sensor feedback instead of relying entirely on timed movements.

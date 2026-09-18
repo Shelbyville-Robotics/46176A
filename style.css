@@ -919,3 +919,78 @@ h1, h2, .logo {
     background: var(--primary-glow);
     cursor: pointer;
 }
+/* --- DIAGNOSTIC PHOTO GRID --- */
+.visual-grid-section {
+    padding: 60px 10%;
+}
+
+.diagnostic-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.diagnostic-card {
+    background: rgba(15, 14, 14, 0.8);
+    border: 1px solid var(--secondary-color);
+    border-radius: 6px;
+    overflow: hidden;
+    transition: 0.3s ease;
+    box-shadow: 0 0 10px rgba(255, 140, 0, 0.1);
+}
+
+.diagnostic-card:hover {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 20px var(--primary-glow);
+    transform: translateY(-5px);
+}
+
+.image-wrapper {
+    position: relative;
+    width: 100%;
+    height: 180px;
+    background: #000;
+}
+
+.image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+    transition: 0.3s;
+}
+
+.diagnostic-card:hover .image-wrapper img {
+    opacity: 1;
+}
+
+.hud-tag {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: var(--secondary-color);
+    color: #000;
+    font-family: 'VT323', monospace;
+    font-size: 0.9rem;
+    padding: 2px 8px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.diagnostic-info {
+    padding: 20px;
+}
+
+.diagnostic-info h3 {
+    font-family: 'VT323', monospace;
+    font-size: 1.4rem;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.diagnostic-info p {
+    font-size: 0.95rem;
+    color: var(--text-light);
+    opacity: 0.8;
+}

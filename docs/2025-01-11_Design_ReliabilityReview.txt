@@ -1,0 +1,24 @@
+Reliability Review
+Team: Robotnik
+
+Review each subsystem using these questions:
+
+Drivetrain:
+- Does it drive straight?
+- Are wheels and shafts secure?
+- Can a wheel be replaced quickly?
+
+Intake:
+- Does it jam?
+- Can the rollers be accessed?
+- Are gears protected?
+
+Scoring mechanism:
+- Does it repeat the same motion?
+- Are hard stops or sensors needed?
+- Can damaged parts be replaced quickly?
+
+Electronics:
+- Are cables labeled?
+- Is the brain easy to access?
+- Are batteries easy to swap?

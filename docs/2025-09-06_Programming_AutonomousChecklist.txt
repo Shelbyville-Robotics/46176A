@@ -1,0 +1,16 @@
+Autonomous Testing Checklist
+Team: Robotnik
+
+Before testing:
+[ ] Battery charged
+[ ] Correct program selected
+[ ] Starting position marked
+[ ] Field setup verified
+
+For each run:
+- Record success/failure.
+- Record approximate completion time.
+- Record the first point where the robot deviated.
+- Record sensor readings when useful.
+
+Do not change multiple variables between tests unless the purpose of the test is specifically to compare complete versions.

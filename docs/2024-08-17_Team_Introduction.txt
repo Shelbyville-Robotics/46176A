@@ -1,0 +1,15 @@
+VEX V5 Team Archive
+Team: Robotnik
+Season: 2024-2025
+
+Robotnik returned for another season of VEX V5 competition.
+
+Core engineering principles:
+- Reliability
+- Repeatability
+- Serviceability
+- Clear documentation
+- Iterative testing
+
+Archive note:
+Some files in this collection are planning examples and historical-style documentation intended to demonstrate how the team's work could be organized.

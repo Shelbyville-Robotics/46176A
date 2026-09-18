@@ -1,0 +1,26 @@
+// Example VEX V5 drive-base pseudocode
+// Archive example - verify motor ports and gearing before use.
+
+motor leftFront(PORT1);
+motor leftBack(PORT2);
+motor rightFront(PORT9);
+motor rightBack(PORT10);
+
+void drive(int leftPower, int rightPower) {
+    leftFront.spin(fwd, leftPower, pct);
+    leftBack.spin(fwd, leftPower, pct);
+    rightFront.spin(fwd, rightPower, pct);
+    rightBack.spin(fwd, rightPower, pct);
+}
+
+int main() {
+    vexcodeInit();
+
+    while (true) {
+        int forward = Controller1.Axis3.position();
+        int turn = Controller1.Axis1.position();
+
+        drive(forward + turn, forward - turn);
+        wait(20, msec);
+    }
+}

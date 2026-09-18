@@ -1,0 +1,26 @@
+Robotics Website Content Ideas
+
+Possible public pages:
+- Team history
+- Current robot
+- Previous robots
+- Engineering notebook excerpts
+- Programming resources
+- CAD gallery
+- Competition schedule
+- Competition results
+- Team members and roles
+- Outreach projects
+- Awards
+- Build logs
+
+Archive idea:
+Use dates in filenames so the website can sort engineering records chronologically.
+
+Suggested filename format:
+YYYY-MM-DD_Category_FileName.ext
+
+Examples:
+2026-08-29_Design_DrivetrainRevision.txt
+2026-09-03_Code_AutonomousRoutine.cpp
+2026-09-10_Competition_EventReport.txt

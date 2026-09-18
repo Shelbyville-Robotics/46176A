@@ -1,0 +1,11 @@
+VEX V5 Team Archive
+Team: Bumblebee
+Season: 2022-2023
+
+Bumblebee is continuing the team's focus on dependable robot design, programming, and engineering documentation.
+
+This season's priorities:
+- Improve autonomous consistency.
+- Make mechanisms easier to service.
+- Keep software organized into reusable functions.
+- Document failed designs as well as successful ones.

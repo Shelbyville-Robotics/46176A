@@ -1,0 +1,17 @@
+Build Log
+Team: Robotnik
+Date: 2021-01-16
+
+Today's work:
+- Reinforced the drivetrain.
+- Tested wheel alignment.
+- Reorganized electronics.
+- Checked that wires were secured away from moving parts.
+
+Problems:
+The robot pulled slightly to one side during long straight drives.
+
+Next steps:
+- Measure wheel spacing.
+- Check friction on each wheel.
+- Test motor groups independently.

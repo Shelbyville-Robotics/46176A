@@ -1,0 +1,27 @@
+Competition Event Report
+Team: Robotnik
+
+Event summary:
+This file is a template for documenting a VEX V5 competition.
+
+Robot version:
+Driver team:
+Programming version:
+
+What worked:
+- 
+
+What failed:
+- 
+
+Match strategy observations:
+- 
+
+Mechanical changes made at event:
+- 
+
+Software changes made at event:
+- 
+
+Ideas for next event:
+- 

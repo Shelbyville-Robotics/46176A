@@ -1,0 +1,16 @@
+// Reusable VEX V5 motor helper examples.
+// Port numbers are placeholders.
+
+void stopMotor(motor &m) {
+    m.stop(brake);
+}
+
+void moveMotor(motor &m, int power) {
+    m.spin(fwd, power, pct);
+}
+
+void moveForDegrees(motor &m, double degrees, int power) {
+    m.spinFor(fwd, degrees, deg, power, pct);
+}
+
+// Keep hardware-specific setup separate from control logic.

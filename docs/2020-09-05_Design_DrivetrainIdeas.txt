@@ -1,0 +1,19 @@
+Drivetrain Ideas
+Team: Robotnik
+
+Possible layouts:
+1. 4-motor tank drive
+2. 6-motor tank drive
+3. 4-wheel mecanum drive
+4. 6-wheel drive
+
+Things to evaluate:
+- Weight
+- Turning speed
+- Traction
+- Gear ratio
+- Ease of maintenance
+- Motor temperature
+
+Initial idea:
+Start with a simple 6-wheel drivetrain if the rules and available parts allow it. Prioritize reliability over maximum speed.

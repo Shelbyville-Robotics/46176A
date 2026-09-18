@@ -1,0 +1,16 @@
+Competition Match Notes
+Team: Goblin machine
+
+Match observations:
+- Robot performed consistently during driver control.
+- Autonomous needs more repeatability.
+- Intake occasionally required manual correction.
+
+Strategy questions:
+1. Which scoring actions are safest under time pressure?
+2. Which mechanism failures have happened more than once?
+3. Can driver-control routines be simplified?
+4. Which autonomous actions provide the most value?
+
+Next build session:
+Focus on reliability before adding new features.

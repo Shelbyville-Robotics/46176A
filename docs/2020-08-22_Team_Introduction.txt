@@ -1,0 +1,12 @@
+VEX V5 Robotics Team Archive
+Team: Robotnik
+Season: 2020-2021
+
+Team introduction:
+Robotnik is a VEX V5 robotics team focused on learning engineering, programming, CAD, documentation, and teamwork. This archive contains development notes and planning material from the season.
+
+Goals:
+- Build a reliable competition robot.
+- Learn the VEX V5 ecosystem.
+- Keep engineering notes that can be reused in future seasons.
+- Improve autonomous programming.

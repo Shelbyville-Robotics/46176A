@@ -1,0 +1,24 @@
+Season Plan
+Team: Goblin machine
+Season: 2023-2024
+
+August-September:
+- Research the game.
+- Identify scoring opportunities.
+- Build drivetrain prototype.
+- Start engineering notebook.
+
+October-November:
+- Prototype primary mechanism.
+- Begin autonomous testing.
+- Record competition results.
+
+December-January:
+- Refine robot.
+- Improve driver control.
+- Reduce failure points.
+
+February onward:
+- Competition preparation.
+- Match strategy review.
+- Continue iterative improvements.

@@ -1,0 +1,17 @@
+Controller Layout Proposal
+Team: Robotnik
+
+Left joystick:
+- Forward/reverse
+- Turning
+
+Right-side buttons:
+- Primary intake
+- Reverse intake
+- Main scoring mechanism
+
+Other buttons:
+- Pneumatic/mechanism controls as required by the final robot
+
+Design goal:
+The driver should be able to perform common actions without removing either hand from the controller.

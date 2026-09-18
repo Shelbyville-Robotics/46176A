@@ -1,0 +1,27 @@
+Pre-Season Checklist
+Team: Robotnik
+
+Mechanical:
+[ ] Wheels inspected
+[ ] Screws tightened
+[ ] Shafts checked
+[ ] Bearings checked
+[ ] Mechanisms tested
+
+Electrical:
+[ ] Brain charged
+[ ] Batteries charged
+[ ] Motors connected
+[ ] Controller connected
+[ ] Cables secured
+
+Software:
+[ ] Driver control tested
+[ ] Autonomous tested
+[ ] Motor directions verified
+[ ] Competition template checked
+
+Documentation:
+[ ] Engineering notebook updated
+[ ] Robot photos taken
+[ ] Design decisions recorded

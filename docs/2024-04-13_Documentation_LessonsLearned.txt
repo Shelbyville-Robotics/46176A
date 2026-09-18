@@ -1,0 +1,9 @@
+Lessons Learned
+Team: Goblin machine
+Season: 2023-2024
+
+1. Prototype mechanisms before building the final version.
+2. Keep electronics accessible for troubleshooting.
+3. Test autonomous routines repeatedly instead of judging them from a single successful run.
+4. Record why a design was changed, not just what changed.
+5. A simple mechanism that works consistently can be more useful than a complicated mechanism that frequently fails.

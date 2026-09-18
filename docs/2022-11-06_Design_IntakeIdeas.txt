@@ -1,0 +1,23 @@
+Intake Design Ideas
+Team: Bumblebee
+
+Concept A: Simple roller intake
+Pros:
+- Few parts
+- Easy to repair
+- Simple control logic
+
+Cons:
+- May have difficulty with inconsistent game objects
+
+Concept B: Multi-roller intake
+Pros:
+- More contact points
+- Potentially smoother intake
+
+Cons:
+- More weight
+- More motors or gearing may be required
+
+Testing plan:
+Build quick prototypes before committing to a final mechanism.
