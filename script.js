@@ -1,210 +1,170 @@
-//localStorage.clear();//
-window.addEventListener('load', () => {
-    const loader = document.getElementById('loader-wrapper');
-    const content = document.getElementById('content');
+"use strict";
 
-    // 1. Check if the loader has already run in this session
-    if (sessionStorage.getItem("hasLoaded")) {
-        if (loader) loader.style.display = 'none';
-        if (content) {
-            content.classList.remove('hidden');
-            content.style.opacity = '1';
-            content.style.transform = 'translateY(0)';
-        }
-        document.body.style.overflow = 'auto'; // Re-enable scrolling immediately
-        return; // Exit the function so it skips the animation
+// Every feature enhances content that already works without JavaScript.
+function initNavigation() {
+    const nav = document.querySelector('.navbar');
+    const toggle = document.querySelector('.menu-toggle');
+    const links = document.getElementById('nav-links');
+    if (!nav || !toggle || !links) return;
+    nav.classList.add('nav-enhanced');
+    function closeMenu() {
+        toggle.setAttribute('aria-expanded', 'false');
+        links.classList.remove('is-open');
     }
-
-    // 2. Otherwise, run the animation for the first time
-    setTimeout(() => {
-        if (loader) loader.style.opacity = '0';
-        
-        setTimeout(() => {
-            if (loader) loader.style.display = 'none';
-            if (content) {
-                content.classList.remove('hidden');
-                content.style.opacity = '1';
-                content.style.transform = 'translateY(0)';
-            }
-            document.body.style.overflow = 'auto'; 
-            
-            // 3. Mark it as "loaded" for this session
-            sessionStorage.setItem("hasLoaded", "true");
-        }, 800);
-    }, 2000); 
-});
-function displayFiles(filesToDisplay) {
-    const fileListContainer = document.getElementById('file-list');
-    fileListContainer.innerHTML = ''; 
-
-    if (filesToDisplay.length === 0) {
-        fileListContainer.innerHTML = `<p class="no-results">No matching documents found.</p>`;
-        return;
-    }
-
-    filesToDisplay.forEach(file => {
-        // Split filename by underscores: [Date, Category, Name]
-        const parts = file.name.split('_');
-        
-        let date = "Unknown Date";
-        let category = "General";
-        let displayName = file.name;
-
-        // If they followed the SOP: YYYY-MM-DD_Category_Name.ext
-        if (parts.length >= 3) {
-            date = parts[0];
-            category = parts[1];
-            // Get the name and remove the extension
-            displayName = parts.slice(2).join(' ').replace(/\.[^/.]+$/, "");
-        } else {
-            // Fallback for files that don't follow the rules
-            displayName = file.name.replace(/_/g, ' ').replace(/\.[^/.]+$/, "");
-        }
-
-        const ext = file.name.split('.').pop().toUpperCase();
-        
-        const card = document.createElement('div');
-        card.className = 'doc-card';
-        card.innerHTML = `
-            <div class="doc-icon">📄</div>
-            <div class="doc-info">
-                <span class="doc-category">${category}</span>
-                <h3>${displayName}</h3>
-                <div class="doc-meta">
-                    <span class="file-type">${ext}</span>
-                    <span class="last-updated">Updated: ${date}</span>
-                </div>
-            </div>
-            <a href="${file.download_url}" target="_blank" class="download-link">Open</a>
-        `;
-        fileListContainer.appendChild(card);
+    toggle.addEventListener('click', () => {
+        const expanded = toggle.getAttribute('aria-expanded') !== 'true';
+        toggle.setAttribute('aria-expanded', String(expanded));
+        links.classList.toggle('is-open', expanded);
     });
+    links.addEventListener('click', event => {
+        if (event.target.closest('a')) closeMenu();
+    });
+    document.addEventListener('keydown', event => {
+        if (event.key === 'Escape' && toggle.getAttribute('aria-expanded') === 'true') {
+            closeMenu();
+            toggle.focus();
+        }
+    });
+    document.addEventListener('click', event => {
+        if (!nav.contains(event.target)) closeMenu();
+    });
+    window.matchMedia('(min-width: 761px)').addEventListener('change', closeMenu);
 }
-async function fetchGallery() {
-    const galleryContainer = document.getElementById('robot-gallery');
-    if (!galleryContainer) return;
- //does not work, as of 3/12/
-    try {
-        const response = await fetch(`https://api.github.com/repos/${USERNAME}/${repo}/contents/gallery`);
-        const data = await response.json();
 
-        galleryContainer.innerHTML = ''; // Clear loading text
-
-        data.forEach(file => {
-            if (file.type === 'file' && isImage(file.name)) {
-                const item = document.createElement('div');
-                item.className = 'gallery-item';
-                item.innerHTML = `
-                    <img src="${file.download_url}" alt="Robot Photo">
-                    <div class="gallery-overlay"></div>
-                `;
-                galleryContainer.appendChild(item);
-            }
+function initReveals() {
+    const motion = window.matchMedia('(prefers-reduced-motion: reduce)');
+    if (motion.matches || !('IntersectionObserver' in window)) return;
+    const targets = document.querySelectorAll('[data-reveal]');
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (!entry.isIntersecting) return;
+            entry.target.classList.add('is-visible');
+            observer.unobserve(entry.target);
         });
-    } catch (error) {
-        console.error("Gallery Error:", error);
-    }
-}
-
-// Helper to check if file is an image
-function isImage(filename) {
-    return /\.(jpg|jpeg|png|webp|gif)$/i.test(filename);
-}
-
-// Run it
-fetchGallery();
-// --- ANNOUNCEMENT BANNER CONFIG ---
-const SHOW_BANNER = false; 
-const BANNER_TEXT = "Next season starting May";
-const BANNER_LINK = "#"; 
-
-function handleBanner() {
-    if (!SHOW_BANNER) return;
-
-    const banner = document.createElement('div');
-    banner.className = 'announcement-banner';
-    
-    const content = BANNER_LINK !== "" 
-        ? `<a href="${BANNER_LINK}" target="_blank">[ SIGNAL ACQUIRED ] ${BANNER_TEXT}</a>`
-        : `[ SYSTEM NOTICE ] ${BANNER_TEXT}`;
-
-    banner.innerHTML = content;
-    document.body.prepend(banner);
-}
-
-handleBanner();
-document.addEventListener("DOMContentLoaded", () => {
-    const splash = document.getElementById('press-start-screen');
-    const startBtn = document.getElementById('start-btn');
-
-    if (!splash || !startBtn) return;
-
-    // Check if the user has already "Started" before
-    if (localStorage.getItem("hasPressedStart")) {
-        splash.style.display = 'none'; // Instant hide if they've seen it
-    }
-
-    startBtn.addEventListener('click', () => {
-        // 1. Play a sound effect (optional)
-        // new Audio('start-sound.mp3').play();
-
-        // 2. Hide the screen with the fade effect
-        splash.classList.add('hidden');
-
-        // 3. Save the "seen" status in the browser's memory
-        localStorage.setItem("hasPressedStart", "true");
+    }, { threshold: .08, rootMargin: '0px 0px -24px 0px' });
+    targets.forEach(target => {
+        // Initial viewport content is never gated by an observer callback.
+        if (target.getBoundingClientRect().top < window.innerHeight - 20) return;
+        target.classList.add('reveal', 'reveal-pending');
+        target.style.setProperty('--reveal-delay', (Number(target.dataset.reveal) || 0) + 'ms');
+        observer.observe(target);
     });
-});
-// --- LEADERBOARD DATA ---
-const teamScores = [
-    { name: "CAPTAIN", drive: 99, code: 85, hours: 120 },
-    { name: "BOT", drive: 75, code: 99, hours: 145 },
-    { name: "STRESSTEST", drive: 60, code: 70, hours: 200 },
-    { name: "ROOKIE", drive: 40, code: 50, hours: 80 }
-];
-
-function updateLeaderboard() {
-    const tableBody = document.getElementById('leaderboard-body');
-    if (!tableBody) return;
-
-    // 1. Calculate Points and Sort (Points = Drive + Code)
-    // You can change this formula however you like!
-    const sortedData = teamScores.map(player => ({
-        ...player,
-        points: player.drive + player.code
-    })).sort((a, b) => b.points - a.points);
-
-    // 2. Clear existing rows
-    tableBody.innerHTML = '';
-
-    // 3. Build new rows
-    sortedData.forEach((player, index) => {
-        const rank = index + 1;
-        let rankText = `${rank}TH`;
-        if (rank === 1) rankText = "1ST";
-        if (rank === 2) rankText = "2ND";
-        if (rank === 3) rankText = "3RD";
-
-        const row = document.createElement('tr');
-        // Add the 'highlight' class to the top player
-        if (rank === 1) row.className = 'highlight';
-
-        row.innerHTML = `
-            <td>${rankText}</td>
-            <td>${player.name}</td>
-            <td>${player.drive}</td>
-            <td>${player.code}</td>
-            <td>${player.points}</td>
-            <td>${player.hours}</td>
-        `;
-        tableBody.appendChild(row);
+    motion.addEventListener('change', () => {
+        if (!motion.matches) return;
+        observer.disconnect();
+        targets.forEach(target => target.classList.add('is-visible'));
+    });
+    document.addEventListener('focusin', event => {
+        const target = event.target.closest('.reveal-pending');
+        if (target) {
+            target.classList.add('is-visible');
+            observer.unobserve(target);
+        }
     });
 }
 
-// Run the update
-updateLeaderboard();
-AOS.init({
-    duration: 800, // Animation speed in milliseconds
-    once: true,    // Only animate once when scrolling down
-    offset: 100    // Trigger slightly before the element enters the screen
-});
+function initArchive() {
+    const search = document.getElementById('doc-search');
+    const category = document.getElementById('doc-category');
+    const type = document.getElementById('doc-type');
+    const reset = document.getElementById('doc-reset');
+    const count = document.getElementById('doc-count');
+    const empty = document.getElementById('doc-empty');
+    if (!search || !category || !type || !reset || !count || !empty) return;
+    const cards = [...document.querySelectorAll('.doc-card')];
+    const normalise = value => value.toLowerCase().replace(/[_./-]+/g, ' ').replace(/\s+/g, ' ').trim();
+    function applyFilters() {
+        const terms = normalise(search.value).split(' ').filter(Boolean);
+        let visible = 0;
+        cards.forEach(card => {
+            const matches = terms.every(term => card.dataset.search.includes(term))
+                && (!category.value || card.dataset.category === category.value)
+                && (!type.value || card.dataset.type === type.value);
+            card.hidden = !matches;
+            if (matches) visible++;
+        });
+        count.textContent = visible + ' of ' + cards.length + ' archive files';
+        empty.hidden = visible !== 0;
+        reset.disabled = !search.value && !category.value && !type.value;
+    }
+    search.addEventListener('input', applyFilters);
+    category.addEventListener('change', applyFilters);
+    type.addEventListener('change', applyFilters);
+    reset.addEventListener('click', () => {
+        search.value = '';
+        category.value = '';
+        type.value = '';
+        applyFilters();
+        search.focus();
+    });
+    document.querySelector('.archive-toolbar').hidden = false;
+    reset.hidden = false;
+    applyFilters();
+}
+
+function initGallery() {
+    const dialog = document.getElementById('photo-dialog');
+    if (!dialog || typeof dialog.showModal !== 'function') return;
+    const items = [...document.querySelectorAll('.gallery-item')];
+    if (!items.length) return;
+    const image = document.getElementById('lightbox-image');
+    const title = document.getElementById('photo-title');
+    const position = document.getElementById('photo-position');
+    let index = 0;
+    let opener;
+    function showImage(next) {
+        index = (next + items.length) % items.length;
+        image.src = items[index].href;
+        image.alt = items[index].querySelector('img').alt;
+        title.textContent = items[index].dataset.caption;
+        position.textContent = (index + 1) + ' / ' + items.length;
+    }
+    items.forEach((item, next) => {
+        item.addEventListener('click', event => {
+            if (event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
+            event.preventDefault();
+            opener = item;
+            showImage(next);
+            dialog.showModal();
+        });
+    });
+    dialog.querySelector('[data-close]').addEventListener('click', () => dialog.close());
+    dialog.querySelector('[data-previous]').addEventListener('click', () => showImage(index - 1));
+    dialog.querySelector('[data-next]').addEventListener('click', () => showImage(index + 1));
+    dialog.addEventListener('keydown', event => {
+        if (event.key === 'ArrowRight' || event.key === 'ArrowLeft') {
+            event.preventDefault();
+            showImage(index + (event.key === 'ArrowRight' ? 1 : -1));
+        }
+    });
+    dialog.addEventListener('click', event => {
+        if (event.target !== dialog) return;
+        const bounds = dialog.getBoundingClientRect();
+        if (event.clientX < bounds.left || event.clientX > bounds.right || event.clientY < bounds.top || event.clientY > bounds.bottom) dialog.close();
+    });
+    dialog.addEventListener('close', () => {
+        image.removeAttribute('src');
+        opener?.focus();
+    });
+}
+
+function initBootSequence() {
+    const dialog = document.getElementById('boot-dialog');
+    const trigger = document.getElementById('boot-trigger');
+    if (!dialog || !trigger || typeof dialog.showModal !== 'function') return;
+    trigger.hidden = false;
+    trigger.addEventListener('click', () => dialog.showModal());
+    dialog.querySelectorAll('[data-close]').forEach(button => {
+        button.addEventListener('click', () => dialog.close());
+    });
+    dialog.addEventListener('close', () => trigger.focus());
+}
+
+function init() {
+    // Isolate enhancements so one optional feature cannot break another page.
+    [initNavigation, initArchive, initGallery, initBootSequence, initReveals].forEach(enhance => {
+        try { enhance(); } catch (error) { console.error('Could not initialise ' + enhance.name + ':', error); }
+    });
+}
+if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init, { once: true });
+else init();

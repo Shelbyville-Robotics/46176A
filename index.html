@@ -3,130 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>46176A | Home</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Meet BEC Robotics, team 46176A. Explore our robot, engineering archive, competitions, and season plans.">
+    <meta name="theme-color" content="#0c0d10">
+    <title>Home | BEC Robotics 46176A</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="style.css?v=1.1.0">
+    <script data-cfasync="false" src="script.js?v=1.1.0" defer></script>
 </head>
 <body>
-    <div id="press-start-screen">
-        <div class="glitch-container">
-            <h1 class="game-title" data-text="BEC_OS">BEC_OS</h1>
-        </div>
-        <div class="start-prompt">
-            <p class="blink">ORDER UP: INSERT TOKEN</p>
-            <button id="start-btn">PREPARE GRILL</button>
-    </div>
-</div>
-
-    <div id="loader-wrapper">
-        <div class="loader">
-            <div class="hex-orbit"></div>
-            <div class="hex-center"></div>
-        </div>
-        <p>INITIALIZING SYSTEMS...</p>
-    </div>
-
-    <main id="content" class="hidden">
-        <nav>
-            <div class="logo">Bit-Shift</div>
-            <ul>
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="robot.html">The Robot</a></li>
-                <li><a href="comp.html">Competitions</a></li>
-                <li><a href="docs.html">documents</a></li>
-                <li><a href="season.html">Season</a></li>
-            </ul>
+    <a href="#content" class="skip-link">Skip to content</a>
+    <header class="site-header">
+        <nav class="navbar container" aria-label="Main navigation">
+            <a class="logo" href="index.html" aria-label="BEC Robotics home"><span class="logo-mark" aria-hidden="true">A</span><span class="logo-text">BEC ROBOTICS<small>TEAM 46176A</small></span></a>
+            <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links"><span class="menu-icon" aria-hidden="true"></span> Menu</button>
+            <ul id="nav-links" class="nav-links"><li><a href="index.html" aria-current="page">Home</a></li><li><a href="robot.html">The Robot</a></li><li><a href="comp.html">Competitions</a></li><li><a href="docs.html">Documents</a></li><li><a href="season.html">Season</a></li></ul>
         </nav>
-        
-        <section class="hero">
-            <h1>Building the Future, <br><span>One Byte at a Time.</span></h1>
-            <a href="season.html" class="cta-btn">View Our Season</a>
+    </header>
+    <main id="content" class="container" tabindex="-1">
+
+        <section class="hero page-enter" aria-labelledby="home-title">
+            <div class="hero-copy">
+                <div class="eyebrow"><span class="status-dot" aria-hidden="true"></span>SHELBYVILLE ROBOTICS / 46176A</div>
+                <h1 id="home-title">Building the future.<br><span>One byte<br>at a time.</span></h1>
+                <p>We’re Bacon, Egg &amp; Cheese. A robotics team turning big ideas into real machines, one build, one line of code, and one match at a time.</p>
+                <div class="hero-actions"><a href="robot.html" class="button">Meet the robot <span aria-hidden="true">↗</span></a><a href="season.html" class="button secondary">Explore our season</a></div>
+                <div class="hero-meta"><span>VEX V5 ROBOTICS</span><span>SHELBYVILLE, IN</span><span>BEC_OS v1.1</span></div>
+            </div>
+            <div class="robot-frame">
+        <div class="frame-top"><span>46176A / FIELD CAPTURE</span><span>PHOTO ARCHIVE</span></div>
+        <div class="frame-image"><img src="assets/robot-side.webp" alt="Goblin machine robot on the VEX competition field" width="900" height="1200" fetchpriority="high"><div class="scan-line" aria-hidden="true"></div><div class="frame-caption"><strong>Goblin machine</strong><span>FROM THE WORKSHOP TO THE FIELD</span></div></div>
+        <div class="frame-bottom"><span>BEC_OS / ENGINEERING ARCHIVE</span><button id="boot-trigger" type="button" hidden>Run boot sequence ↗</button></div>
+    </div>
         </section>
-<section id="team" class="team-section">
-    <div class="section-header">
-        <h2><span>01.</span> Meet the Crew</h2>
-        <div class="line"></div>
-    </div>
+        <section class="section divider" aria-labelledby="workshop-title">
+            <div class="section-heading" data-reveal><div><div class="eyebrow">01 / INSIDE THE WORKSHOP</div><h2 id="workshop-title">Ideas into motion.</h2></div><p>Follow the build, explore our notes, and see what we’re working toward.</p></div>
+            <div class="feature-grid">
+                <a href="robot.html" class="feature-card" data-reveal="0"><span class="card-number">01 / THE MACHINE</span><h3>Built from the ground up.</h3><p>Meet our robot and take a closer look through the field photo gallery.</p><span class="card-arrow" aria-hidden="true">↗</span></a>
+                <a href="docs.html" class="feature-card" data-reveal="70"><span class="card-number">02 / THE PROCESS</span><h3>Every iteration matters.</h3><p>Design ideas, code notes, build logs, and lessons from previous seasons.</p><span class="card-arrow" aria-hidden="true">↗</span></a>
+                <a href="comp.html" class="feature-card" data-reveal="140"><span class="card-number">03 / THE FIELD</span><h3>Ready for the next challenge.</h3><p>Explore our competition archive and follow our journey beyond the workshop.</p><span class="card-arrow" aria-hidden="true">↗</span></a>
+            </div>
+        </section>
+        <section id="team" class="section" aria-labelledby="team-title">
+            <div class="section-heading" data-reveal><div><div class="eyebrow">02 / THE PEOPLE BEHIND THE ROBOT</div><h2 id="team-title">Meet the crew.</h2></div><p>Different skills. One team. A shared drive to make the next version better.</p></div>
+            <div class="team-grid"><article class="member-card" data-reveal="0"><div class="member-image"><img src="docs/photos/IMG_0018.jpeg" alt="Bacon illustration" width="110" height="110" loading="lazy"></div><div class="member-info"><h3>Malaki Sutton</h3><p class="role">Team lead / Coder / Driver</p><p class="bio">Four years in robotics. State qualifier in 2023.</p></div></article>
+<article class="member-card" data-reveal="50"><div class="member-image"><img src="docs/photos/IMG_0019.jpeg" alt="Egg illustration" width="110" height="110" loading="lazy"></div><div class="member-info"><h3>Hunter Richards</h3><p class="role">Driver</p><p class="bio">CAD design and lightweight chassis builds.</p></div></article>
+<article class="member-card" data-reveal="100"><div class="member-image"><img src="docs/photos/IMG_0020.jpeg" alt="Cheese illustration" width="110" height="110" loading="lazy"></div><div class="member-info"><h3>Liam</h3><p class="role">Notebook / Documentation</p><p class="bio">Engineering notes, build records, and team documentation.</p></div></article>
+<article class="member-card" data-reveal="150"><div class="member-image"><img src="docs/photos/IMG_0018.jpeg" alt="Bacon illustration" width="110" height="110" loading="lazy"></div><div class="member-info"><h3>James</h3><p class="role">Builder / Game planner</p><p class="bio">Robot design, build work, and game strategy.</p></div></article>
+<article class="member-card" data-reveal="200"><div class="member-image"><img src="docs/photos/IMG_0019.jpeg" alt="Egg illustration" width="110" height="110" loading="lazy"></div><div class="member-info"><h3>Sam Chen</h3><p class="role">Driver / Electrical</p><p class="bio">Driver control and wiring harness management.</p></div></article></div>
+        </section>
+        <section class="section"><div class="workshop-banner" data-reveal><div><h2>Curious how it all comes together?</h2><p>Our engineering archive is open for you to explore.</p></div><a class="button secondary" href="docs.html">Open the archive <span aria-hidden="true">↗</span></a></div></section>
 
-    <div class="team-grid">
-        <div class="member-card">
-            <div class="member-image">
-                <img src="docs/photos/IMG_0018.jpeg" alt="Team Member">
-            </div>
-            <div class="member-info">
-                <h3>Malaki Sutton</h3>
-                <p class="role">Team Lead / coder / driver</p>
-                <p class="bio"> 4 years in robotics, state qualafided in 2023</p>
-            </div>
-        </div>
-
-        <div class="member-card">
-            <div class="member-image">
-                <img src="docs/photos/IMG_0019.jpeg" alt="Team Member">
-            </div>
-            <div class="member-info">
-                <h3>Hunter Richards</h3>
-                <p class="role">Driver</p>
-                <p class="bio">Expert in CAD design and lightweight chassis builds.</p>
-            </div>
-        </div>
-
-        <div class="member-card">
-            <div class="member-image">
-                <img src="docs/photos/IMG_0020.jpeg" alt="Team Member">
-            </div>
-            <div class="member-info">
-                <h3>Liam</h3>
-                <p class="role">Notebook / documention</p>
-                <p class="bio">Master of the controller and wiring harness management.</p>
-            </div>
-        </div>
-
-        <div class="member-card">
-            <div class="member-image">
-                <img src="docs/photos/IMG_0018.jpeg" alt="Team Member">
-            </div>
-            <div class="member-info">
-                <h3>James</h3>
-                <p class="role">Builder / Gameplanner</p>
-                <p class="bio">Master of the controller and wiring harness management.</p>
-            </div>
-        </div>
-
-        <div class="member-card">
-            <div class="member-image">
-                <img src="docs/photos/IMG_0019.jpeg" alt="Team Member">
-            </div>
-            <div class="member-info">
-                <h3>Sam Chen</h3>
-                <p class="role">Driver / Electrical</p>
-                <p class="bio">Master of the controller and wiring harness management.</p>
-            </div>
-        </div>
-    </div>
-    </section>
     </main>
 
-    <script src="script.js"></script>
-<footer>
-        <div class="footer-container">
-            <div class="sponsor-logos">
-                <a href="https://sponsor-website.com" target="_blank" class="logo-box">
-                 <img src="docs/photos/Image_placeholder.png" alt="Sponsor Name">
-                </a>
-
-                 <a href="https://another-sponsor.com" target="_blank" class="logo-box">
-                     <img src="docs/photos/Image_placeholder.png" alt="Another Sponsor">
-                 </a>
-         </div>
-
-            <div class="footer-bottom">
-                <div class="social-links">
-                    <a href="#">Instagram</a>
-                    <a href="/Legal/">Policies</a>
-                    <a href="https://github.com/Shelbyville-Robotics">GitHub</a>
-                </div>
-                <p>&copy; 2026-2027 Greeks LLC. All systems operational.</p>
+    <dialog id="boot-dialog" class="boot-dialog" aria-labelledby="boot-title">
+        <div class="modal-top"><h2 id="boot-title">BEC_OS / Order up.</h2><button class="icon-button" data-close type="button" aria-label="Close boot sequence">×</button></div>
+        <div class="boot-body"><div class="terminal-lines"><p class="boot-line"><b>&gt;</b> Initializing team 46176A…</p><p class="boot-line" style="--delay: 300ms"><b>&gt;</b> Loading engineering archive…</p><p class="boot-line" style="--delay: 600ms"><b>&gt;</b> Bacon. Egg. Cheese. Ready.</p><p class="boot-line" style="--delay: 900ms"><b>&gt; All systems go. Let’s build.</b></p></div><button class="button" data-close type="button">Back to the workshop <span aria-hidden="true">↗</span></button></div>
+    </dialog>
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-top">
+                <div><a class="logo" href="index.html" aria-label="BEC Robotics home"><span class="logo-mark" aria-hidden="true">A</span><span class="logo-text">BEC ROBOTICS<small>TEAM 46176A</small></span></a><p>Bacon, Egg &amp; Cheese. A team of builders, programmers, and problem solvers.</p></div>
+                <div class="footer-links"><a href="docs.html">Engineering archive</a><a href="Legal/index.html">Policies</a><a href="https://github.com/Shelbyville-Robotics/46176A" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a></div>
             </div>
+            <div class="footer-bottom"><p>&copy; 2026–2027 Greeks LLC. BEC Robotics.</p><span class="footer-status"><span class="status-dot" aria-hidden="true"></span>BUILD. TEST. REPEAT.</span></div>
         </div>
     </footer>
 </body>

@@ -3,174 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BEC Robotics - Robot Specs</title>
-    <link rel="stylesheet" href="style.css">
-    <!-- AOS Animation Library CSS -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <meta name="description" content="Explore the BEC Robotics robot archive, build notes, and six field photos of Goblin machine.">
+    <meta name="theme-color" content="#0c0d10">
+    <title>The Robot | BEC Robotics 46176A</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="style.css?v=1.1.0">
+    <script data-cfasync="false" src="script.js?v=1.1.0" defer></script>
 </head>
 <body>
+    <a href="#content" class="skip-link">Skip to content</a>
+    <header class="site-header">
+        <nav class="navbar container" aria-label="Main navigation">
+            <a class="logo" href="index.html" aria-label="BEC Robotics home"><span class="logo-mark" aria-hidden="true">A</span><span class="logo-text">BEC ROBOTICS<small>TEAM 46176A</small></span></a>
+            <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links"><span class="menu-icon" aria-hidden="true"></span> Menu</button>
+            <ul id="nav-links" class="nav-links"><li><a href="index.html">Home</a></li><li><a href="robot.html" aria-current="page">The Robot</a></li><li><a href="comp.html">Competitions</a></li><li><a href="docs.html">Documents</a></li><li><a href="season.html">Season</a></li></ul>
+        </nav>
+    </header>
+    <main id="content" class="container" tabindex="-1">
 
-    <!-- Global Navigation -->
-    <nav class="navbar">
-        <div class="logo">
-            <span class="bracket">[</span> BEC ROBOTICS <span class="bracket">]</span>
-        </div>
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="robot.html" class="active">Robot</a></li>
-            <li><a href="comp.html">Competitions</a></li>
-            <li><a href="season.html">Season</a></li>
-            <li><a href="docs.html">Docs</a></li>
-        </ul>
-    </nav>
-
-    <!-- Main Content Container -->
-    <main id="content">
-        
-        <!-- Robot Hero Section -->
-        <section class="robot-hero">
-            <h1 data-aos="fade-down" data-aos-duration="1000">UNIT_SPEC: GRILL-MASTER v1</h1>
-            <p class="floating-text" data-aos="fade-in" data-aos-delay="300">STATUS: FULLY OPERATIONAL // READY FOR TOURNAMENT GRID</p>
-        </section>
-
-        <!-- Blueprint / CAD Section -->
-        <section class="blueprint-section">
-            <div class="section-header" data-aos="fade-right">
-                <h2><span>01.</span> STRUCTURAL BLUEPRINT</h2>
-                <div class="line"></div>
-            </div>
-            
-            <div class="robot-blueprint-container" data-aos="zoom-in" data-aos-duration="1000">
-                <!-- Replace with your actual robot cad/image link -->
-                <img src="docs/photos/Image_placeholder.png" alt="Robot Blueprint">
-                <div class="blueprint-overlay"></div>
+        <section class="page-hero page-enter"><div class="eyebrow">01 / ROBOT &amp; BUILD ARCHIVE</div><h1>From the bench.<br><span>To the field.</span></h1><p>A closer look at the machines we build, the systems we test, and the ideas that make it onto the competition field.</p></section>
+        <section class="section robot-overview" aria-labelledby="robot-title">
+            <div data-reveal><div class="robot-frame">
+        <div class="frame-top"><span>46176A / FIELD CAPTURE</span><span>PHOTO ARCHIVE</span></div>
+        <div class="frame-image"><img src="assets/robot-side.webp" alt="Goblin machine robot on the VEX competition field" width="900" height="1200" fetchpriority="high"><div class="scan-line" aria-hidden="true"></div><div class="frame-caption"><strong>Goblin machine</strong><span>FROM THE WORKSHOP TO THE FIELD</span></div></div>
+        <div class="frame-bottom"><span>BEC_OS / ENGINEERING ARCHIVE</span><span>UNIT 46176A</span></div>
+    </div></div>
+            <div data-reveal="80"><div class="eyebrow">ARCHIVED BUILD / 46176A</div><h2 id="robot-title">Goblin machine.</h2><p>A build shaped by our designers, programmers, and drivers. Explore the original photos and team records below.</p>
+                <dl class="spec-list"><div><dt>Build time</dt><dd>4½ months</dd></div><div><dt>Design team</dt><dd>Malaki, James, Hunter</dd></div><div><dt>Programming</dt><dd>Darron, Malaki</dd></div><div><dt>Drivers</dt><dd>Malaki, Hunter</dd></div><div><dt>Notebook</dt><dd>Liam</dd></div></dl>
+                <a class="text-link" href="docs/2025-2026_robot.doc" target="_blank" rel="noopener noreferrer">Open the original build notes <span aria-hidden="true">↗</span></a>
             </div>
         </section>
-
-        <!-- Core Subsystems Grid -->
-        <section class="subsystems-section">
-            <div class="section-header" data-aos="fade-right">
-                <h2><span>02.</span> CORE SUBSYSTEMS</h2>
-                <div class="line"></div>
-            </div>
-
-            <div class="specs-grid">
-                <!-- Card 1 -->
-                <div class="spec-card" data-aos="fade-up" data-aos-delay="100">
-                    <div class="card-icon">⚡</div>
-                    <h3>DRIVE TRAIN</h3>
-                    <p>4-Motor Swerve Drive configured for high-speed maneuverability across the game board.</p>
-                </div>
-
-                <!-- Card 2 -->
-                <div class="spec-card" data-aos="fade-up" data-aos-delay="200">
-                    <div class="card-icon">🦾</div>
-                    <h3>INTAKE MECHANISM</h3>
-                    <p>Custom-molded active rollers designed for rapid game piece acquisition.</p>
-                </div>
-
-                <!-- Card 3 -->
-                <div class="spec-card" data-aos="fade-up" data-aos-delay="300">
-                    <div class="card-icon">🎯</div>
-                    <h3>SCORING ARM</h3>
-                    <p>Pneumatic-assisted linear lift capable of reaching top-tier scoring nodes with sub-millimeter precision.</p>
-                </div>
-            </div>
+        <section class="section divider" aria-labelledby="systems-title"><div class="section-heading" data-reveal><div><div class="eyebrow">02 / ENGINEERING FOCUS</div><h2 id="systems-title">The systems behind the build.</h2></div><p>Our design and test notes track the changes that make the robot more reliable.</p></div>
+            <div class="specs-grid"><article class="spec-card" data-reveal><span class="card-number">SYS_01</span><h3>Drive train</h3><p>Predictable movement starts with a dependable chassis. Our archive covers drivetrain ideas, motor helpers, and driver-control notes.</p></article><article class="spec-card" data-reveal="70"><span class="card-number">SYS_02</span><h3>Intake &amp; scoring</h3><p>Compare mechanism ideas and record what needs to improve after field tests and match practice.</p></article><article class="spec-card" data-reveal="140"><span class="card-number">SYS_03</span><h3>Autonomous control</h3><p>Programming checklists and test notes help turn an autonomous routine into repeatable performance.</p></article></div>
         </section>
-        <!-- VISUAL DIAGNOSTICS / COMPONENT GRID -->
-        <section class="visual-grid-section">
-            <div class="section-header" data-aos="fade-right">
-                <h2><span>04.</span> COMPONENT TELEMETRY</h2>
-                <div class="line"></div>
-            </div>
-
-            <div class="diagnostic-grid">
-        <!-- Component 1 -->
-                <div class="diagnostic-card" data-aos="fade-up" data-aos-delay="100">
-                    <div class="image-wrapper">
-                        <img src="docs/photos/Image_placeholder.png" alt="Swerve Module">
-                        <div class="hud-tag">MOD_01</div>
-                    </div>
-                    <div class="diagnostic-info">
-                        <h3>SWERVE DRIVE POD</h3>
-                        <p>Configured for 360-degree vector steering and rapid evasive maneuvers.</p>
-                    </div>
-                </div>
-
-        <!-- Component 2 -->
-                <div class="diagnostic-card" data-aos="fade-up" data-aos-delay="200">
-                    <div class="image-wrapper">
-                        <img src="docs/photos/Image_placeholder.png" alt="Intake System">
-                        <div class="hud-tag">MOD_02</div>
-                    </div>
-                    <div class="diagnostic-info">
-                        <h3>ACTIVE INTAKE</h3>
-                        <p>High-torque compliant wheels for instant game-piece acquisition.</p>
-                    </div>
-                </div>
-
-        <!-- Component 3 -->
-                <div class="diagnostic-card" data-aos="fade-up" data-aos-delay="300">
-                    <div class="image-wrapper">
-                        <img src="docs/photos/Image_placeholder.png" alt="Elevator Lift">
-                        <div class="hud-tag">MOD_03</div>
-                    </div>
-                    <div class="diagnostic-info">
-                        <h3>TELESCOPING LIFT</h3>
-                        <p>Rigid multi-stage aluminum channel for high-altitude scoring nodes.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Live Robot Gallery (Fetched via Script) -->
-        <section class="gallery-section">
-            <div class="section-header" data-aos="fade-right">
-                <h2><span>03.</span> FIELD CAPTURES</h2>
-                <div class="line"></div>
-            </div>
-
-            <div id="robot-gallery" class="gallery-grid" data-aos="fade-up">
-                <!-- JavaScript will automatically populate images here -->
-                <p class="loading-text">Loading visual data...</p>
-            </div>
-        </section>
+        <section id="gallery" class="section" aria-labelledby="gallery-title"><div class="section-heading" data-reveal><div><div class="eyebrow">03 / FIELD CAPTURES</div><h2 id="gallery-title">Every angle. Every detail.</h2></div><p>Six original field photos. Select one to explore the full image.</p></div><div id="robot-gallery" class="gallery-grid"><a class="gallery-item" href="docs/2025-02-22_Photo_Gobblin.Machine.Side.2.jpeg" data-caption="Side view" data-reveal="0"><div class="gallery-image"><img src="assets/robot-side.webp" alt="Goblin machine robot viewed from its left side" width="900" height="1200" loading="lazy" decoding="async"></div><div class="gallery-caption"><span>Side view</span><span aria-hidden="true">↗</span></div></a>
+<a class="gallery-item" href="docs/2025-02-22_Photo_Gobblin.Machine.Side.1.jpeg" data-caption="Angled view" data-reveal="60"><div class="gallery-image"><img src="assets/robot-angle.webp" alt="Angled view of the robot chassis and scoring mechanism" width="900" height="1200" loading="lazy" decoding="async"></div><div class="gallery-caption"><span>Angled view</span><span aria-hidden="true">↗</span></div></a>
+<a class="gallery-item" href="docs/2025-02-23_Photo_Gobblin.Machine.Front.jpeg" data-caption="Front view" data-reveal="120"><div class="gallery-image"><img src="assets/robot-front.webp" alt="Front view of the Goblin machine robot" width="900" height="1200" loading="lazy" decoding="async"></div><div class="gallery-caption"><span>Front view</span><span aria-hidden="true">↗</span></div></a>
+<a class="gallery-item" href="docs/2025-02-22_Photo_Gobblin.Machine.Top.jpeg" data-caption="Top view" data-reveal="0"><div class="gallery-image"><img src="assets/robot-top.webp" alt="Top view showing robot motors, wiring, and frame" width="900" height="1200" loading="lazy" decoding="async"></div><div class="gallery-caption"><span>Top view</span><span aria-hidden="true">↗</span></div></a>
+<a class="gallery-item" href="docs/2025-02-22_Photo_Gobblin.Machine.back.jpeg" data-caption="Rear view" data-reveal="60"><div class="gallery-image"><img src="assets/robot-back.webp" alt="Rear view of the Goblin machine robot" width="900" height="1200" loading="lazy" decoding="async"></div><div class="gallery-caption"><span>Rear view</span><span aria-hidden="true">↗</span></div></a>
+<a class="gallery-item" href="docs/2025-02-24_Photo_Gobblin.Machine.Bottom.jpeg" data-caption="Underside" data-reveal="120"><div class="gallery-image"><img src="assets/robot-bottom.webp" alt="Robot underside showing drivetrain components" width="900" height="1200" loading="lazy" decoding="async"></div><div class="gallery-caption"><span>Underside</span><span aria-hidden="true">↗</span></div></a></div></section>
 
     </main>
 
-    <!-- Footer -->
-    <footer>
-        <div class="footer-container">
-            <div class="sponsors">
-                <h3>PARTNER NETWORK</h3>
-                <div class="sponsor-logos">
-                    <!-- Sponsor logos injected or listed here -->
-                    <div class="logo-box"><span>SPONSOR 1</span></div>
-                    <div class="logo-box"><span>SPONSOR 2</span></div>
-                </div>
+    <dialog id="photo-dialog" aria-labelledby="photo-title">
+        <div class="modal-top"><h2 id="photo-title">Robot photo</h2><button class="icon-button" data-close type="button" aria-label="Close photo viewer">×</button></div>
+        <img id="lightbox-image" class="lightbox-image" alt="">
+        <div class="lightbox-controls"><button class="icon-button" data-previous type="button" aria-label="Previous photo">←</button><p id="photo-position" aria-live="polite"></p><button class="icon-button" data-next type="button" aria-label="Next photo">→</button></div>
+    </dialog>
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-top">
+                <div><a class="logo" href="index.html" aria-label="BEC Robotics home"><span class="logo-mark" aria-hidden="true">A</span><span class="logo-text">BEC ROBOTICS<small>TEAM 46176A</small></span></a><p>Bacon, Egg &amp; Cheese. A team of builders, programmers, and problem solvers.</p></div>
+                <div class="footer-links"><a href="docs.html">Engineering archive</a><a href="Legal/index.html">Policies</a><a href="https://github.com/Shelbyville-Robotics/46176A" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a></div>
             </div>
-            <div class="footer-bottom">
-                <div class="social-links">
-                    <a href="#" target="_blank">INSTAGRAM</a>
-                    <a href="/Legal/">Policies</a>
-                    <a href="#" target="_blank">YOUTUBE</a>
-                </div>
-                <p>© 2026 BACON EGG & CHEESE ROBOTICS. ALL RIGHTS RESERVED.</p>
-            </div>
+            <div class="footer-bottom"><p>&copy; 2026–2027 Greeks LLC. BEC Robotics.</p><span class="footer-status"><span class="status-dot" aria-hidden="true"></span>BUILD. TEST. REPEAT.</span></div>
         </div>
     </footer>
-
-    <!-- AOS Animation Library JS -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        // Initialize animations
-        AOS.init({
-            duration: 900,
-            once: true,
-            offset: 80
-        });
-    </script>
-    <!-- Main Site Script -->
-    <script src="script.js"></script>
 </body>
 </html>
