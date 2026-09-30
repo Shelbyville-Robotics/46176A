@@ -3,136 +3,188 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Archives | Documentation</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Search the BEC Robotics engineering archive: robot photos, build logs, design notes, programming resources, and competition records.">
+    <meta name="theme-color" content="#0c0d10">
+    <title>Engineering Archive | BEC Robotics 46176A</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="style.css?v=1.1.0">
+    <script data-cfasync="false" src="script.js?v=1.1.0" defer></script>
 </head>
 <body>
-
-    <div id="loader-wrapper">
-        <div class="loader">
-            <div class="hex-orbit"></div>
-            <div class="hex-center"></div>
-        </div>
-        <p>RETRIVING ARCHIVES...</p>
-    </div>
-
-    <main id="content" class="hidden">
-        <nav>
-            <div class="logo">46176A</div>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="robot.html">The Robot</a></li>
-                <li><a href="comp.html">Competitions</a></li>
-                <li><a href="docs.html" class="active">Documents</a></li>
-                <li><a href="season.html">Season</a></li>
-            </ul>
+    <a href="#content" class="skip-link">Skip to content</a>
+    <header class="site-header">
+        <nav class="navbar container" aria-label="Main navigation">
+            <a class="logo" href="index.html" aria-label="BEC Robotics home"><span class="logo-mark" aria-hidden="true">A</span><span class="logo-text">BEC ROBOTICS<small>TEAM 46176A</small></span></a>
+            <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links"><span class="menu-icon" aria-hidden="true"></span> Menu</button>
+            <ul id="nav-links" class="nav-links"><li><a href="index.html">Home</a></li><li><a href="robot.html">The Robot</a></li><li><a href="comp.html">Competitions</a></li><li><a href="docs.html" aria-current="page">Documents</a></li><li><a href="season.html">Season</a></li></ul>
         </nav>
+    </header>
+    <main id="content" class="container" tabindex="-1">
 
-        <section class="docs-hero">
-            <h1>Technical <span>Archives</span></h1>
-            <p>A repository of our designs, logs, and legacy data.</p>
-            
-            <div class="search-container">
-                <input type="text" id="doc-search" placeholder="Search by filename or type (e.g. 'chassis' or 'PDF')...">
-                <div class="search-icon">🔍</div>
+        <section class="page-hero page-enter"><div class="eyebrow">02 / DESIGNS. LOGS. LEGACY DATA.</div><h1>The engineering<br><span>archive.</span></h1><p>Every build leaves a trail. Explore our design ideas, programming notes, competition records, and photos from previous seasons.</p></section>
+        <section class="section" style="padding-top: 15px" aria-label="Archive files">
+            <div class="archive-toolbar" hidden>
+                <label><span class="field-label">SEARCH THE ARCHIVE</span><input type="search" id="doc-search" placeholder="Search a name, year, or file type…" autocomplete="off"></label>
+                <label class="filter-control"><span class="field-label">CATEGORY</span><select id="doc-category"><option value="">All categories</option><option value="Code">Code</option><option value="Competition">Competition</option><option value="Design">Design</option><option value="Documentation">Documentation</option><option value="General">General</option><option value="Notes">Notes</option><option value="Photo">Photo</option><option value="Programming">Programming</option><option value="Team">Team</option><option value="Website">Website</option></select></label>
+                <label class="filter-control"><span class="field-label">FILE TYPE</span><select id="doc-type"><option value="">All file types</option><option value="DOC">DOC</option><option value="JPEG">JPEG</option><option value="TXT">TXT</option></select></label>
             </div>
-        </section>
-
-        <section class="docs-container">
+            <div class="archive-summary"><p id="doc-count" role="status" aria-live="polite">28 archive files</p><button id="doc-reset" type="button" hidden disabled>Clear filters</button></div>
+            <noscript><p class="note" style="margin-bottom: 20px">All archive files are listed below. Enable JavaScript to use search and filters.</p></noscript>
             <div id="file-list" class="docs-grid">
-                <p id="loading-text">Connecting to database...</p>
+                <!-- ARCHIVE_START -->
+                <article class="doc-card" data-search="2026 08 29 website contentideas txt website content ideas txt docs 2026 08 29 website contentideas txt" data-category="Website" data-type="TXT">
+                    <span class="doc-icon" aria-hidden="true">TXT</span>
+                    <div class="doc-info"><span class="doc-category">Website</span><h3>Content Ideas</h3><div class="doc-meta"><span>TXT</span><time datetime="2026-08-29">2026-08-29</time></div></div>
+                    <a class="download-link" href="docs/2026-08-29_Website_ContentIdeas.txt" target="_blank" rel="noopener noreferrer" aria-label="Open Content Ideas (TXT)">Open <span aria-hidden="true">↗</span></a>
+                </article>
+                <article class="doc-card" data-search="2026 02 21 competition eventreport txt competition event report txt docs 2026 02 21 competition eventreport txt" data-category="Competition" data-type="TXT">
+                    <span class="doc-icon" aria-hidden="true">TXT</span>
+                    <div class="doc-info"><span class="doc-category">Competition</span><h3>Event Report</h3><div class="doc-meta"><span>TXT</span><time datetime="2026-02-21">2026-02-21</time></div></div>
+                    <a class="download-link" href="docs/2026-02-21_Competition_EventReport.txt" target="_blank" rel="noopener noreferrer" aria-label="Open Event Report (TXT)">Open <span aria-hidden="true">↗</span></a>
+                </article>
+                <article class="doc-card" data-search="2025 09 06 programming autonomouschecklist txt programming autonomous checklist txt docs 2025 09 06 programming autonomouschecklist txt" data-category="Programming" data-type="TXT">
+                    <span class="doc-icon" aria-hidden="true">TXT</span>
+                    <div class="doc-info"><span class="doc-category">Programming</span><h3>Autonomous Checklist</h3><div class="doc-meta"><span>TXT</span><time datetime="2025-09-06">2025-09-06</time></div></div>
+                    <a class="download-link" href="docs/2025-09-06_Programming_AutonomousChecklist.txt" target="_blank" rel="noopener noreferrer" aria-label="Open Autonomous Checklist (TXT)">Open <span aria-hidden="true">↗</span></a>
+                </article>
+                <article class="doc-card" data-search="2025 06 14 documentation archivestructure txt documentation archive structure txt docs 2025 06 14 documentation archivestructure txt" data-category="Documentation" data-type="TXT">
+                    <span class="doc-icon" aria-hidden="true">TXT</span>
+                    <div class="doc-info"><span class="doc-category">Documentation</span><h3>Archive Structure</h3><div class="doc-meta"><span>TXT</span><time datetime="2025-06-14">2025-06-14</time></div></div>
+                    <a class="download-link" href="docs/2025-06-14_Documentation_ArchiveStructure.txt" target="_blank" rel="noopener noreferrer" aria-label="Open Archive Structure (TXT)">Open <span aria-hidden="true">↗</span></a>
+                </article>
+                <article class="doc-card" data-search="2025 02 24 photo gobblin machine bottom jpeg photo gobblin machine bottom jpeg docs 2025 02 24 photo gobblin machine bottom jpeg" data-category="Photo" data-type="JPEG">
+                    <span class="doc-icon" aria-hidden="true">JPEG</span>
+                    <div class="doc-info"><span class="doc-category">Photo</span><h3>Gobblin Machine Bottom</h3><div class="doc-meta"><span>JPEG</span><time datetime="2025-02-24">2025-02-24</time></div></div>
+                    <a class="download-link" href="docs/2025-02-24_Photo_Gobblin.Machine.Bottom.jpeg" target="_blank" rel="noopener noreferrer" aria-label="Open Gobblin Machine Bottom (JPEG)">Open <span aria-hidden="true">↗</span></a>
+                </article>
+                <article class="doc-card" data-search="2025 02 23 photo gobblin machine front jpeg photo gobblin machine front jpeg docs 2025 02 23 photo gobblin machine front jpeg" data-category="Photo" data-type="JPEG">
+                    <span class="doc-icon" aria-hidden="true">JPEG</span>
+                    <div class="doc-info"><span class="doc-category">Photo</span><h3>Gobblin Machine Front</h3><div class="doc-meta"><span>JPEG</span><time datetime="2025-02-23">2025-02-23</time></div></div>
+                    <a class="download-link" href="docs/2025-02-23_Photo_Gobblin.Machine.Front.jpeg" target="_blank" rel="noopener noreferrer" aria-label="Open Gobblin Machine Front (JPEG)">Open <span aria-hidden="true">↗</span></a>
+                </article>
+                <article class="doc-card" data-search="2025 02 22 photo gobblin machine top jpeg photo gobblin machine top jpeg docs 2025 02 22 photo gobblin machine top jpeg" data-category="Photo" data-type="JPEG">
+                    <span class="doc-icon" aria-hidden="true">JPEG</span>
+                    <div class="doc-info"><span class="doc-category">Photo</span><h3>Gobblin Machine Top</h3><div class="doc-meta"><span>JPEG</span><time datetime="2025-02-22">2025-02-22</time></div></div>
+                    <a class="download-link" href="docs/2025-02-22_Photo_Gobblin.Machine.Top.jpeg" target="_blank" rel="noopener noreferrer" aria-label="Open Gobblin Machine Top (JPEG)">Open <span aria-hidden="true">↗</span></a>
+                </article>
+                <article class="doc-card" data-search="2025 02 22 photo gobblin machine side 2 jpeg photo gobblin machine side 2 jpeg docs 2025 02 22 photo gobblin machine side 2 jpeg" data-category="Photo" data-type="JPEG">
+                    <span class="doc-icon" aria-hidden="true">JPEG</span>
+                    <div class="doc-info"><span class="doc-category">Photo</span><h3>Gobblin Machine Side 2</h3><div class="doc-meta"><span>JPEG</span><time datetime="2025-02-22">2025-02-22</time></div></div>
+                    <a class="download-link" href="docs/2025-02-22_Photo_Gobblin.Machine.Side.2.jpeg" target="_blank" rel="noopener noreferrer" aria-label="Open Gobblin Machine Side 2 (JPEG)">Open <span aria-hidden="true">↗</span></a>
+                </article>
+                <article class="doc-card" data-search="2025 02 22 photo gobblin machine side 1 jpeg photo gobblin machine side 1 jpeg docs 2025 02 22 photo gobblin machine side 1 jpeg" data-category="Photo" data-type="JPEG">
+                    <span class="doc-icon" aria-hidden="true">JPEG</span>
+                    <div class="doc-info"><span class="doc-category">Photo</span><h3>Gobblin Machine Side 1</h3><div class="doc-meta"><span>JPEG</span><time datetime="2025-02-22">2025-02-22</time></div></div>
+                    <a class="download-link" href="docs/2025-02-22_Photo_Gobblin.Machine.Side.1.jpeg" target="_blank" rel="noopener noreferrer" aria-label="Open Gobblin Machine Side 1 (JPEG)">Open <span aria-hidden="true">↗</span></a>
+                </article>
+                <article class="doc-card" data-search="2025 02 22 photo gobblin machine back jpeg photo gobblin machine back jpeg docs 2025 02 22 photo gobblin machine back jpeg" data-category="Photo" data-type="JPEG">
+                    <span class="doc-icon" aria-hidden="true">JPEG</span>
+                    <div class="doc-info"><span class="doc-category">Photo</span><h3>Gobblin Machine back</h3><div class="doc-meta"><span>JPEG</span><time datetime="2025-02-22">2025-02-22</time></div></div>
+                    <a class="download-link" href="docs/2025-02-22_Photo_Gobblin.Machine.back.jpeg" target="_blank" rel="noopener noreferrer" aria-label="Open Gobblin Machine back (JPEG)">Open <span aria-hidden="true">↗</span></a>
+                </article>
+                <article class="doc-card" data-search="2025 01 11 design reliabilityreview txt design reliability review txt docs 2025 01 11 design reliabilityreview txt" data-category="Design" data-type="TXT">
+                    <span class="doc-icon" aria-hidden="true">TXT</span>
+                    <div class="doc-info"><span class="doc-category">Design</span><h3>Reliability Review</h3><div class="doc-meta"><span>TXT</span><time datetime="2025-01-11">2025-01-11</time></div></div>
+                    <a class="download-link" href="docs/2025-01-11_Design_ReliabilityReview.txt" target="_blank" rel="noopener noreferrer" aria-label="Open Reliability Review (TXT)">Open <span aria-hidden="true">↗</span></a>
+                </article>
+                <article class="doc-card" data-search="2024 10 05 programming controllerlayout txt programming controller layout txt docs 2024 10 05 programming controllerlayout txt" data-category="Programming" data-type="TXT">
+                    <span class="doc-icon" aria-hidden="true">TXT</span>
+                    <div class="doc-info"><span class="doc-category">Programming</span><h3>Controller Layout</h3><div class="doc-meta"><span>TXT</span><time datetime="2024-10-05">2024-10-05</time></div></div>
+                    <a class="download-link" href="docs/2024-10-05_Programming_ControllerLayout.txt" target="_blank" rel="noopener noreferrer" aria-label="Open Controller Layout (TXT)">Open <span aria-hidden="true">↗</span></a>
+                </article>
+                <article class="doc-card" data-search="2024 08 17 team introduction txt team introduction txt docs 2024 08 17 team introduction txt" data-category="Team" data-type="TXT">
+                    <span class="doc-icon" aria-hidden="true">TXT</span>
+                    <div class="doc-info"><span class="doc-category">Team</span><h3>Introduction</h3><div class="doc-meta"><span>TXT</span><time datetime="2024-08-17">2024-08-17</time></div></div>
+                    <a class="download-link" href="docs/2024-08-17_Team_Introduction.txt" target="_blank" rel="noopener noreferrer" aria-label="Open Introduction (TXT)">Open <span aria-hidden="true">↗</span></a>
+                </article>
+                <article class="doc-card" data-search="2024 08 14 notes dr robotnik doc notes dr robotnik doc docs 2024 08 14 notes dr robotnik doc" data-category="Notes" data-type="DOC">
+                    <span class="doc-icon" aria-hidden="true">DOC</span>
+                    <div class="doc-info"><span class="doc-category">Notes</span><h3>Dr Robotnik</h3><div class="doc-meta"><span>DOC</span><time datetime="2024-08-14">2024-08-14</time></div></div>
+                    <a class="download-link" href="docs/2024-08-14_Notes_Dr.Robotnik.doc" target="_blank" rel="noopener noreferrer" aria-label="Open Dr Robotnik (DOC)">Open <span aria-hidden="true">↗</span></a>
+                </article>
+                <article class="doc-card" data-search="2024 04 13 documentation lessonslearned txt documentation lessons learned txt docs 2024 04 13 documentation lessonslearned txt" data-category="Documentation" data-type="TXT">
+                    <span class="doc-icon" aria-hidden="true">TXT</span>
+                    <div class="doc-info"><span class="doc-category">Documentation</span><h3>Lessons Learned</h3><div class="doc-meta"><span>TXT</span><time datetime="2024-04-13">2024-04-13</time></div></div>
+                    <a class="download-link" href="docs/2024-04-13_Documentation_LessonsLearned.txt" target="_blank" rel="noopener noreferrer" aria-label="Open Lessons Learned (TXT)">Open <span aria-hidden="true">↗</span></a>
+                </article>
+                <article class="doc-card" data-search="2023 12 09 competition matchnotes txt competition match notes txt docs 2023 12 09 competition matchnotes txt" data-category="Competition" data-type="TXT">
+                    <span class="doc-icon" aria-hidden="true">TXT</span>
+                    <div class="doc-info"><span class="doc-category">Competition</span><h3>Match Notes</h3><div class="doc-meta"><span>TXT</span><time datetime="2023-12-09">2023-12-09</time></div></div>
+                    <a class="download-link" href="docs/2023-12-09_Competition_MatchNotes.txt" target="_blank" rel="noopener noreferrer" aria-label="Open Match Notes (TXT)">Open <span aria-hidden="true">↗</span></a>
+                </article>
+                <article class="doc-card" data-search="2023 08 26 team seasonplan txt team season plan txt docs 2023 08 26 team seasonplan txt" data-category="Team" data-type="TXT">
+                    <span class="doc-icon" aria-hidden="true">TXT</span>
+                    <div class="doc-info"><span class="doc-category">Team</span><h3>Season Plan</h3><div class="doc-meta"><span>TXT</span><time datetime="2023-08-26">2023-08-26</time></div></div>
+                    <a class="download-link" href="docs/2023-08-26_Team_SeasonPlan.txt" target="_blank" rel="noopener noreferrer" aria-label="Open Season Plan (TXT)">Open <span aria-hidden="true">↗</span></a>
+                </article>
+                <article class="doc-card" data-search="2023 03 18 code motorhelperfunctions cpp txt code motor helper functions cpp txt docs 2023 03 18 code motorhelperfunctions cpp txt" data-category="Code" data-type="TXT">
+                    <span class="doc-icon" aria-hidden="true">TXT</span>
+                    <div class="doc-info"><span class="doc-category">Code</span><h3>Motor Helper Functions cpp</h3><div class="doc-meta"><span>TXT</span><time datetime="2023-03-18">2023-03-18</time></div></div>
+                    <a class="download-link" href="docs/2023-03-18_Code_MotorHelperFunctions.cpp.txt" target="_blank" rel="noopener noreferrer" aria-label="Open Motor Helper Functions cpp (TXT)">Open <span aria-hidden="true">↗</span></a>
+                </article>
+                <article class="doc-card" data-search="2022 11 06 design intakeideas txt design intake ideas txt docs 2022 11 06 design intakeideas txt" data-category="Design" data-type="TXT">
+                    <span class="doc-icon" aria-hidden="true">TXT</span>
+                    <div class="doc-info"><span class="doc-category">Design</span><h3>Intake Ideas</h3><div class="doc-meta"><span>TXT</span><time datetime="2022-11-06">2022-11-06</time></div></div>
+                    <a class="download-link" href="docs/2022-11-06_Design_IntakeIdeas.txt" target="_blank" rel="noopener noreferrer" aria-label="Open Intake Ideas (TXT)">Open <span aria-hidden="true">↗</span></a>
+                </article>
+                <article class="doc-card" data-search="2022 08 20 team introduction txt team introduction txt docs 2022 08 20 team introduction txt" data-category="Team" data-type="TXT">
+                    <span class="doc-icon" aria-hidden="true">TXT</span>
+                    <div class="doc-info"><span class="doc-category">Team</span><h3>Introduction</h3><div class="doc-meta"><span>TXT</span><time datetime="2022-08-20">2022-08-20</time></div></div>
+                    <a class="download-link" href="docs/2022-08-20_Team_Introduction.txt" target="_blank" rel="noopener noreferrer" aria-label="Open Introduction (TXT)">Open <span aria-hidden="true">↗</span></a>
+                </article>
+                <article class="doc-card" data-search="2022 02 12 programming autonomousnotes txt programming autonomous notes txt docs 2022 02 12 programming autonomousnotes txt" data-category="Programming" data-type="TXT">
+                    <span class="doc-icon" aria-hidden="true">TXT</span>
+                    <div class="doc-info"><span class="doc-category">Programming</span><h3>Autonomous Notes</h3><div class="doc-meta"><span>TXT</span><time datetime="2022-02-12">2022-02-12</time></div></div>
+                    <a class="download-link" href="docs/2022-02-12_Programming_AutonomousNotes.txt" target="_blank" rel="noopener noreferrer" aria-label="Open Autonomous Notes (TXT)">Open <span aria-hidden="true">↗</span></a>
+                </article>
+                <article class="doc-card" data-search="2021 09 04 competition preseasonchecklist txt competition pre season checklist txt docs 2021 09 04 competition preseasonchecklist txt" data-category="Competition" data-type="TXT">
+                    <span class="doc-icon" aria-hidden="true">TXT</span>
+                    <div class="doc-info"><span class="doc-category">Competition</span><h3>Pre Season Checklist</h3><div class="doc-meta"><span>TXT</span><time datetime="2021-09-04">2021-09-04</time></div></div>
+                    <a class="download-link" href="docs/2021-09-04_Competition_PreSeasonChecklist.txt" target="_blank" rel="noopener noreferrer" aria-label="Open Pre Season Checklist (TXT)">Open <span aria-hidden="true">↗</span></a>
+                </article>
+                <article class="doc-card" data-search="2021 01 16 documentation buildlog txt documentation build log txt docs 2021 01 16 documentation buildlog txt" data-category="Documentation" data-type="TXT">
+                    <span class="doc-icon" aria-hidden="true">TXT</span>
+                    <div class="doc-info"><span class="doc-category">Documentation</span><h3>Build Log</h3><div class="doc-meta"><span>TXT</span><time datetime="2021-01-16">2021-01-16</time></div></div>
+                    <a class="download-link" href="docs/2021-01-16_Documentation_BuildLog.txt" target="_blank" rel="noopener noreferrer" aria-label="Open Build Log (TXT)">Open <span aria-hidden="true">↗</span></a>
+                </article>
+                <article class="doc-card" data-search="2020 10 11 code drivebase cpp txt code drive base cpp txt docs 2020 10 11 code drivebase cpp txt" data-category="Code" data-type="TXT">
+                    <span class="doc-icon" aria-hidden="true">TXT</span>
+                    <div class="doc-info"><span class="doc-category">Code</span><h3>Drive Base cpp</h3><div class="doc-meta"><span>TXT</span><time datetime="2020-10-11">2020-10-11</time></div></div>
+                    <a class="download-link" href="docs/2020-10-11_Code_DriveBase.cpp.txt" target="_blank" rel="noopener noreferrer" aria-label="Open Drive Base cpp (TXT)">Open <span aria-hidden="true">↗</span></a>
+                </article>
+                <article class="doc-card" data-search="2020 09 05 design drivetrainideas txt design drivetrain ideas txt docs 2020 09 05 design drivetrainideas txt" data-category="Design" data-type="TXT">
+                    <span class="doc-icon" aria-hidden="true">TXT</span>
+                    <div class="doc-info"><span class="doc-category">Design</span><h3>Drivetrain Ideas</h3><div class="doc-meta"><span>TXT</span><time datetime="2020-09-05">2020-09-05</time></div></div>
+                    <a class="download-link" href="docs/2020-09-05_Design_DrivetrainIdeas.txt" target="_blank" rel="noopener noreferrer" aria-label="Open Drivetrain Ideas (TXT)">Open <span aria-hidden="true">↗</span></a>
+                </article>
+                <article class="doc-card" data-search="2020 08 22 team introduction txt team introduction txt docs 2020 08 22 team introduction txt" data-category="Team" data-type="TXT">
+                    <span class="doc-icon" aria-hidden="true">TXT</span>
+                    <div class="doc-info"><span class="doc-category">Team</span><h3>Introduction</h3><div class="doc-meta"><span>TXT</span><time datetime="2020-08-22">2020-08-22</time></div></div>
+                    <a class="download-link" href="docs/2020-08-22_Team_Introduction.txt" target="_blank" rel="noopener noreferrer" aria-label="Open Introduction (TXT)">Open <span aria-hidden="true">↗</span></a>
+                </article>
+                <article class="doc-card" data-search="test notes doc general test notes doc docs notes test notes doc" data-category="General" data-type="DOC">
+                    <span class="doc-icon" aria-hidden="true">DOC</span>
+                    <div class="doc-info"><span class="doc-category">General</span><h3>test notes</h3><div class="doc-meta"><span>DOC</span><span>Undated record</span></div></div>
+                    <a class="download-link" href="docs/notes/test.notes.doc" target="_blank" rel="noopener noreferrer" aria-label="Open test notes (DOC)">Open <span aria-hidden="true">↗</span></a>
+                </article>
+                <article class="doc-card" data-search="2025 2026 robot doc general 2025 2026 robot doc docs 2025 2026 robot doc" data-category="General" data-type="DOC">
+                    <span class="doc-icon" aria-hidden="true">DOC</span>
+                    <div class="doc-info"><span class="doc-category">General</span><h3>2025-2026 robot</h3><div class="doc-meta"><span>DOC</span><span>Undated record</span></div></div>
+                    <a class="download-link" href="docs/2025-2026_robot.doc" target="_blank" rel="noopener noreferrer" aria-label="Open 2025-2026 robot (DOC)">Open <span aria-hidden="true">↗</span></a>
+                </article>
+                <!-- ARCHIVE_END -->
             </div>
+            <p id="doc-empty" class="no-results" hidden>No files match those filters. Try another search or clear the filters.</p>
         </section>
     </main>
 
-    <script>
-        // CONFIGURATION: Update these to match your GitHub project
-        const USERNAME = 'Shelbyville-Robotics'; 
-        const REPO = '46176A';
-        const FOLDER_PATH = 'docs'; 
-
-        let allFiles = []; 
-
-        async function fetchDocs() {
-            const fileListContainer = document.getElementById('file-list');
-            try {
-                // Fetching the contents of the /docs folder via GitHub API
-                const response = await fetch(`https://api.github.com/repos/${USERNAME}/${REPO}/contents/${FOLDER_PATH}`);
-                const data = await response.json();
-
-                if (response.status !== 200) throw new Error("Check folder path or API limits");
-
-                // Filter for files only and sort alphabetically (descending)
-                allFiles = data.filter(item => item.type === 'file');
-                allFiles.sort((a, b) => b.name.localeCompare(a.name));
-
-                displayFiles(allFiles); 
-            } catch (error) {
-                fileListContainer.innerHTML = `<p class="no-results">Error: Could not find the "/docs" folder in your repository.</p>`;
-                console.error(error);
-            }
-        }
-
-        function displayFiles(filesToDisplay) {
-            const fileListContainer = document.getElementById('file-list');
-            fileListContainer.innerHTML = ''; 
-
-            if (filesToDisplay.length === 0) {
-                fileListContainer.innerHTML = `<p class="no-results">No matching documents found.</p>`;
-                return;
-            }
-
-            filesToDisplay.forEach(file => {
-                const ext = file.name.split('.').pop().toUpperCase();
-                const cleanName = file.name.replace(/_/g, ' ').replace(/\.[^/.]+$/, "");
-                
-                const card = document.createElement('div');
-                card.className = 'doc-card';
-                card.innerHTML = `
-                    <div class="doc-icon">📄</div>
-                    <div class="doc-info">
-                        <h3>${cleanName}</h3>
-                        <span class="file-type">${ext} File</span>
-                    </div>
-                    <a href="${file.download_url}" target="_blank" class="download-link">Open</a>
-                `;
-                fileListContainer.appendChild(card);
-            });
-        }
-
-        // Search Input Listener
-        const searchInput = document.getElementById('doc-search');
-        searchInput.addEventListener('input', (e) => {
-            const searchTerm = e.target.value.toLowerCase();
-            const filteredFiles = allFiles.filter(file => file.name.toLowerCase().includes(searchTerm));
-            displayFiles(filteredFiles);
-        });
-
-        // Initialize fetch
-        fetchDocs();
-    </script>
-
-    <script src="script.js"></script>
-<footer>
-        <div class="footer-container">
-            <div class="sponsor-logos">
-                <a href="https://sponsor-website.com" target="_blank" class="logo-box">
-                 <img src="docs/photos/Image_placeholder.png" alt="Sponsor Name">
-                </a>
-
-                 <a href="https://another-sponsor.com" target="_blank" class="logo-box">
-                     <img src="docs/photos/Image_placeholder.png" alt="Another Sponsor">
-                 </a>
-         </div>
-
-            <div class="footer-bottom">
-                <div class="social-links">
-                    <a href="#">Instagram</a>
-                    <a href="/Legal/">Policies</a>
-                    <a href="https://github.com/Shelbyville-Robotics">GitHub</a>
-                </div>
-                <p>&copy; 2026-2027 Greeks LLC. All systems operational.</p>
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-top">
+                <div><a class="logo" href="index.html" aria-label="BEC Robotics home"><span class="logo-mark" aria-hidden="true">A</span><span class="logo-text">BEC ROBOTICS<small>TEAM 46176A</small></span></a><p>Bacon, Egg &amp; Cheese. A team of builders, programmers, and problem solvers.</p></div>
+                <div class="footer-links"><a href="docs.html">Engineering archive</a><a href="Legal/index.html">Policies</a><a href="https://github.com/Shelbyville-Robotics/46176A" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a></div>
             </div>
+            <div class="footer-bottom"><p>&copy; 2026–2027 Greeks LLC. BEC Robotics.</p><span class="footer-status"><span class="status-dot" aria-hidden="true"></span>BUILD. TEST. REPEAT.</span></div>
         </div>
     </footer>
 </body>

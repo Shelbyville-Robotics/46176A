@@ -6,6 +6,36 @@ Versions are grouped around meaningful development milestones rather than indivi
 
 ---
 
+## [1.1.0] — 2026-09-30
+
+### Fixed
+
+* Removed the unguarded AOS call that raised errors on pages without the library.
+* Replaced the gallery request using undefined variables and a missing folder with
+  six local robot photos and an accessible photo viewer.
+* Replaced runtime GitHub API archive requests with generated HTML, including nested
+  notes, so files remain available without JavaScript or API access.
+* Added a policy index and corrected relative links for GitHub Pages subdirectories.
+* Removed placeholder sponsor and social links.
+* Removed compulsory splash/loading screens and browser-storage dependencies.
+* Fixed mobile layout overflow, navigation, image sizing, and section spacing.
+* Corrected typos, outdated “upcoming” labels, and confusing placeholder statistics.
+  The practice scoreboard is now explicitly marked as demo data.
+
+### Changed
+
+* Unified BEC Robotics branding, navigation, and footers across every page.
+* Reworked the yellow/orange dark theme with clearer typography and responsive cards.
+* Added page entrances, staggered scroll reveals, hover effects, a robot scan effect,
+  and an optional BEC_OS boot sequence.
+* Added search, category and file-type filters, a result count, and a clear-filters button.
+* Added reduced-motion support, keyboard controls, skip links, and visible focus states.
+* Added optimized robot thumbnails, a favicon, archive tooling, and maintenance notes.
+* Replaced unsupported placeholder robot specifications with the existing Goblin machine
+  build notes and an engineering-focus section.
+
+---
+
 ## [1.0.0] — 2026-09-18
 
 ### Major Website & Archive Release

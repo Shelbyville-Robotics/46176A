@@ -3,90 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Competitions | 2026 Season</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Browse the BEC Robotics 2026 competition archive and team event notes.">
+    <meta name="theme-color" content="#0c0d10">
+    <title>Competitions | BEC Robotics 46176A</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="style.css?v=1.1.0">
+    <script data-cfasync="false" src="script.js?v=1.1.0" defer></script>
 </head>
 <body>
+    <a href="#content" class="skip-link">Skip to content</a>
+    <header class="site-header">
+        <nav class="navbar container" aria-label="Main navigation">
+            <a class="logo" href="index.html" aria-label="BEC Robotics home"><span class="logo-mark" aria-hidden="true">A</span><span class="logo-text">BEC ROBOTICS<small>TEAM 46176A</small></span></a>
+            <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links"><span class="menu-icon" aria-hidden="true"></span> Menu</button>
+            <ul id="nav-links" class="nav-links"><li><a href="index.html">Home</a></li><li><a href="robot.html">The Robot</a></li><li><a href="comp.html" aria-current="page">Competitions</a></li><li><a href="docs.html">Documents</a></li><li><a href="season.html">Season</a></li></ul>
+        </nav>
+    </header>
+    <main id="content" class="container" tabindex="-1">
 
-    <div id="loader-wrapper">
-        <div class="loader">
-            <div class="hex-orbit"></div>
-            <div class="hex-center"></div>
-        </div>
-        <p>ACCESSING LOGS...</p>
-    </div>
-
-    <main id="content" class="hidden">
-        <nav>
-            <div class="logo">ROBO-TEAM</div>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="robot.html">The Robot</a></li>
-                <li><a href="comp.html" class="active">Competitions</a></li>
-                <li><a href="docs.html">Documents</a></li>
-                <li><a href="season.html">Season</a></li>
-            </ul>
-        </nav> 
-
-        <section class="comp-hero">
-            <h1>The <span>2026</span> Mission</h1>
-            <p>Tracking our journey from the workshop to the world stage.</p>
-        </section>
-
-        <section class="timeline-container">
-            <div class="timeline-item">
-                <div class="timeline-date">MARCH 12-14</div>
-                <div class="timeline-content">
-                    <h3>District Qualifier</h3>
-                    <p><strong>Location:</strong> Shelbyville, IN</p>
-                    <p>Ranked #4. Awarded the "Innovation in Control" trophy for our auto-align system.</p>
-                    <span class="status-tag completed">Completed</span>
-                </div>
-            </div>
-
-            <div class="timeline-item">
-                <div class="timeline-date">APRIL 02-05</div>
-                <div class="timeline-content">
-                    <h3>State Championship</h3>
-                    <p><strong>Location:</strong> Indianapolis, IN</p>
-                    <p>Currently optimizing drivetrain code and intake speed for this event.</p>
-                    <span class="status-tag upcoming">Upcoming</span>
-                </div>
-            </div>
-
-            <div class="timeline-item">
-                <div class="timeline-date">MAY 20-23</div>
-                <div class="timeline-content">
-                    <h3>World Championship</h3>
-                    <p><strong>Location:</strong> Houston, TX</p>
-                    <p>Pending qualification.</p>
-                    <span class="status-tag pending">Pending</span>
-                </div>
+        <section class="page-hero page-enter"><div class="eyebrow">03 / THE COMPETITION FIELD</div><h1>Out of the workshop.<br><span>Into the challenge.</span></h1><p>Our journey from build sessions to the tournament floor. Event notes, milestones, and the next goals for team 46176A.</p></section>
+        <section class="section" style="padding-top: 20px" aria-labelledby="events-title">
+            <div class="section-heading" data-reveal><div><div class="eyebrow">2026 / EVENT ARCHIVE</div><h2 id="events-title">The season’s checkpoints.</h2></div><p>These dates are from our previous schedule. New events will appear once the team confirms them.</p></div>
+            <div class="timeline">
+                <article class="timeline-item" data-reveal><div class="timeline-date">MAR 12–14<small>2026</small></div><div class="timeline-content"><div class="event-head"><h3>District Qualifier</h3><span class="status-tag">Completed</span></div><p>Shelbyville, Indiana</p><p>Ranked #4. Awarded the “Innovation in Control” trophy for our auto-align system.</p></div></article>
+                <article class="timeline-item" data-reveal="60"><div class="timeline-date">APR 02–05<small>2026</small></div><div class="timeline-content"><div class="event-head"><h3>State Championship</h3><span class="status-tag pending">Recap pending</span></div><p>Indianapolis, Indiana</p><p>Event results have not been posted. Preparation focused on drivetrain code and intake speed.</p></div></article>
+                <article class="timeline-item" data-reveal="120"><div class="timeline-date">MAY 20–23<small>2026</small></div><div class="timeline-content"><div class="event-head"><h3>World Championship</h3><span class="status-tag pending">Unconfirmed</span></div><p>Houston, Texas</p><p>Archived schedule entry. Qualification and attendance have not been confirmed.</p></div></article>
             </div>
         </section>
+        <section class="section"><div class="workshop-banner" data-reveal><div><h2>The work between the matches.</h2><p>Find our match notes, preparation checklists, and event reports in the archive.</p></div><a class="button secondary" href="docs.html">Explore team records <span aria-hidden="true">↗</span></a></div></section>
     </main>
 
-    <script src="script.js"></script>
-<footer>
-        <div class="footer-container">
-            <div class="sponsor-logos">
-                <a href="https://sponsor-website.com" target="_blank" class="logo-box">
-                 <img src="docs/photos/Image_placeholder.png" alt="Sponsor Name">
-                </a>
-
-                 <a href="https://another-sponsor.com" target="_blank" class="logo-box">
-                     <img src="docs/photos/Image_placeholder.png" alt="Another Sponsor">
-                 </a>
-         </div>
-
-            <div class="footer-bottom">
-                <div class="social-links">
-                    <a href="#">Instagram</a>
-                    <a href="/Legal/">Policies</a>
-                    <a href="https://github.com/Shelbyville-Robotics">GitHub</a>
-                </div>
-                <p>&copy; 2026-2027 Greeks LLC. All systems operational.</p>
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-top">
+                <div><a class="logo" href="index.html" aria-label="BEC Robotics home"><span class="logo-mark" aria-hidden="true">A</span><span class="logo-text">BEC ROBOTICS<small>TEAM 46176A</small></span></a><p>Bacon, Egg &amp; Cheese. A team of builders, programmers, and problem solvers.</p></div>
+                <div class="footer-links"><a href="docs.html">Engineering archive</a><a href="Legal/index.html">Policies</a><a href="https://github.com/Shelbyville-Robotics/46176A" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a></div>
             </div>
+            <div class="footer-bottom"><p>&copy; 2026–2027 Greeks LLC. BEC Robotics.</p><span class="footer-status"><span class="status-dot" aria-hidden="true"></span>BUILD. TEST. REPEAT.</span></div>
         </div>
     </footer>
 </body>

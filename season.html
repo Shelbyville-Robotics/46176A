@@ -3,109 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Season 2026 | Mission Hub</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Follow BEC Robotics season planning, engineering objectives, and practice scoreboard.">
+    <meta name="theme-color" content="#0c0d10">
+    <title>Season Hub | BEC Robotics 46176A</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="style.css?v=1.1.0">
+    <script data-cfasync="false" src="script.js?v=1.1.0" defer></script>
 </head>
 <body>
-
-    <div id="loader-wrapper">
-        <div class="loader"><div class="hex-orbit"></div><div class="hex-center"></div></div>
-        <p>LOADING MISSION DATA...</p>
-    </div>
-
-    <main id="content" class="hidden">
-        <nav>
-            <div class="logo">ROBO-TEAM</div>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="robot.html">The Robot</a></li>
-                <li><a href="comp.html">Competitions</a></li>
-                <li><a href="docs.html">Documents</a></li>
-                <li><a href="season.html" class="active">Season</a></li>
-            </ul>
+    <a href="#content" class="skip-link">Skip to content</a>
+    <header class="site-header">
+        <nav class="navbar container" aria-label="Main navigation">
+            <a class="logo" href="index.html" aria-label="BEC Robotics home"><span class="logo-mark" aria-hidden="true">A</span><span class="logo-text">BEC ROBOTICS<small>TEAM 46176A</small></span></a>
+            <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links"><span class="menu-icon" aria-hidden="true"></span> Menu</button>
+            <ul id="nav-links" class="nav-links"><li><a href="index.html">Home</a></li><li><a href="robot.html">The Robot</a></li><li><a href="comp.html">Competitions</a></li><li><a href="docs.html">Documents</a></li><li><a href="season.html" aria-current="page">Season</a></li></ul>
         </nav>
+    </header>
+    <main id="content" class="container" tabindex="-1">
 
-        <section class="season-header">
-            <h1>Mission: <span> Vortex</span></h1>
-            <p class="season-subtitle">Next season start soon</p>
+        <section class="page-hero page-enter"><div class="eyebrow">04 / SEASON HUB</div><h1>Mission:<br><span>Vortex.</span></h1><p>Build smarter. Test often. Keep improving. Our season hub brings the team’s goals and workshop progress together.</p></section>
+        <section class="section" style="padding-top: 20px" aria-labelledby="progress-title">
+            <div class="section-heading" data-reveal><div><div class="eyebrow">WORKSHOP / PROGRESS TRACKER</div><h2 id="progress-title">The next chapter.</h2></div><p>Current progress totals will appear once the team publishes an update.</p></div>
+            <div class="stats-grid"><div class="stat-card" data-reveal><span class="stat-value">—</span><span class="stat-label">Build completion</span><p>Update pending</p></div><div class="stat-card" data-reveal="60"><span class="stat-value">—</span><span class="stat-label">Awards won</span><p>Update pending</p></div><div class="stat-card" data-reveal="120"><span class="stat-value">—</span><span class="stat-label">Engineering hours</span><p>Update pending</p></div></div>
         </section>
-
-        <section class="stats-grid">
-            <div class="stat-card">
-                <span class="stat-value">0%</span>
-                <span class="stat-label">Build Completion</span>
-            </div>
-            <div class="stat-card">
-                <span class="stat-value">0</span>
-                <span class="stat-label">Awards Won</span>
-            </div>
-            <div class="stat-card">
-                <span class="stat-value">0</span>
-                <span class="stat-label">Engineering Hours</span>
+        <section class="section divider season-content" aria-labelledby="objective-title">
+            <div data-reveal><div class="eyebrow">THE PLAN / KEEP ITERATING</div><h2 id="objective-title">One goal.<br>A better robot.</h2><p>Our focus is on dependable autonomous routines, predictable driver control, and an intake that holds up under competition pressure.</p><ul class="objective-list"><li><span>01</span>Autonomous scoring &amp; repeatability</li><li><span>02</span>Precision maneuvering</li><li><span>03</span>Intake reliability &amp; torque</li></ul></div>
+            <aside class="terminal-card" data-reveal="80" aria-label="Team workflow"><div class="terminal-top" aria-hidden="true"><i></i><i></i><i></i><span>BEC_OS / WORKSHOP</span></div><div class="terminal-lines"><p><b>&gt; DESIGN</b> / Start with the challenge.</p><p><b>&gt; BUILD</b> / Turn an idea into a machine.</p><p><b>&gt; TEST</b> / Find what needs to change.</p><p><b>&gt; REPEAT</b> / Make the next version better.</p></div><a href="docs.html" class="text-link">Read the engineering notes <span aria-hidden="true">↗</span></a></aside>
+        </section>
+        <section class="section" aria-labelledby="scores-title"><div class="section-heading" data-reveal><div><div class="eyebrow">PRACTICE / HIGH SCORE TABLE</div><h2 id="scores-title">A little friendly competition.</h2></div><p>Demo scores are shown until the team publishes practice results.</p></div>
+            <div class="table-container" tabindex="0" role="region" aria-label="Practice scoreboard, scroll horizontally on small screens">
+                <table class="score-table"><caption>Demo data · Points = drive score + code score</caption><thead><tr><th scope="col">RANK</th><th scope="col">PLAYER</th><th scope="col">DRIVE</th><th scope="col">CODE</th><th scope="col">POINTS</th><th scope="col">HOURS</th></tr></thead><tbody id="leaderboard-body"><tr class="highlight"><td>1ST</td><td>CAPTAIN</td><td>99</td><td>85</td><td>184</td><td>120</td></tr><tr><td>2ND</td><td>BOT</td><td>75</td><td>99</td><td>174</td><td>145</td></tr><tr><td>3RD</td><td>STRESSTEST</td><td>60</td><td>70</td><td>130</td><td>200</td></tr><tr><td>4TH</td><td>ROOKIE</td><td>40</td><td>50</td><td>90</td><td>80</td></tr></tbody></table>
             </div>
         </section>
-
-        <section class="season-content">
-            <div class="mission-statement">
-                <h2>The Objective</h2>
-                <p>Our goal this season is to master the '[Game Name]' challenge. We are focusing on autonomous and a revolutionary intake system.</p>
-                <div class="objective-list">
-                    <div class="obj-item">✓ Autonomous Scoring (0)</div>
-                    <div class="obj-item">✓ Precision Maneuvering</div>
-                    <div class="obj-item">⚡ High-Torque   </div>
-                </div>
-            </div>
-            
-            <div class="season-visual">
-                <img src="docs/photos/Image_placeholder.png" alt="Team at Work">
-            </div>
-        </section>
-    <section class="leaderboard-section">
-    <div class="section-header">
-        <h2><span></span> HIGH SCORE TABLE</h2>
-        <div class="line"></div>
-    </div>
-
-    <div class="arcade-table-container">
-        <table class="high-score-table">
-            <thead>
-                <tr>
-                    <th>RANK</th>
-                    <th>PLAYER</th>
-                    <th>DRIVE</th>
-                    <th>CODE</th>
-                    <th>POINTS</th>
-                    <th>HOURS</th>
-                </tr>
-            </thead>
-            <tbody id="leaderboard-body">
-    </tbody>
-        </table>
-    </div>
-</section>
     </main>
 
-    <script src="script.js"></script>
-<footer>
-        <div class="footer-container">
-            <div class="sponsor-logos">
-                <a href="https://sponsor-website.com" target="_blank" class="logo-box">
-                 <img src="docs/photos/Image_placeholder.png" alt="Sponsor Name">
-                </a>
-
-                 <a href="https://another-sponsor.com" target="_blank" class="logo-box">
-                     <img src="docs/photos/Image_placeholder.png" alt="Another Sponsor">
-                 </a>
-         </div>
-
-            <div class="footer-bottom">
-                <div class="social-links">
-                    <a href="#">Instagram</a>
-                    <a href="/Legal/">Policies</a>
-                    <a href="https://github.com/Shelbyville-Robotics">GitHub</a>
-                </div>
-                <p>&copy; 2026-2027 Greeks LLC. All systems operational.</p>
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-top">
+                <div><a class="logo" href="index.html" aria-label="BEC Robotics home"><span class="logo-mark" aria-hidden="true">A</span><span class="logo-text">BEC ROBOTICS<small>TEAM 46176A</small></span></a><p>Bacon, Egg &amp; Cheese. A team of builders, programmers, and problem solvers.</p></div>
+                <div class="footer-links"><a href="docs.html">Engineering archive</a><a href="Legal/index.html">Policies</a><a href="https://github.com/Shelbyville-Robotics/46176A" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a></div>
             </div>
+            <div class="footer-bottom"><p>&copy; 2026–2027 Greeks LLC. BEC Robotics.</p><span class="footer-status"><span class="status-dot" aria-hidden="true"></span>BUILD. TEST. REPEAT.</span></div>
         </div>
     </footer>
 </body>
